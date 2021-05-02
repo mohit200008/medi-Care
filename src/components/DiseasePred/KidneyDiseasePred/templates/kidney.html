@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Kidney Test</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css')}}">
+</head>
+<body>
+
+	<div class="contact1">
+		<div class="container-contact1">
+			<div class="contact1-pic js-tilt" data-tilt>
+				<img src="{{ url_for('static', filename='images/kidney.jpg')}}" alt="IMG">
+			</div>
+
+			<form class="contact1-form" action="{{ url_for('predict')}}" method="post">
+				<span class="contact1-form-title">
+					Take Kidney Test Test
+				</span>
+
+				<div class="wrap-input1">
+					<input class="input1 form-control" type="number" name="bp" required="required" placeholder="Blood Pressure">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1" >
+					<input class="input1 form-control" type="number" name="sg" required="required" placeholder="Specific Gravity">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1">
+					<input class="input1 form-control" type="number" name="al" required="required" placeholder="Albumin">
+					<span class="shadow-input1"></span>
+				</div>
+				<div class="wrap-input1"> 
+					<input class="input1 form-control" type="number" name="su" required="required" placeholder="Blood Sugar Level">
+					<span class="shadow-input1"></span>
+				</div>
+				<div class="wrap-input1">
+					<input class="input1 form-control" type="number" name="rbc" required="required" placeholder="Red Blood Cells Count">
+					<span class="shadow-input1"></span>
+				</div>
+				<div class="wrap-input1">
+					<input class="input1 form-control" type="number" name="pc" required="required" placeholder="Pus Cell Count">
+					<span class="shadow-input1"></span>
+				</div>
+				<div class="wrap-input1">
+					<input class="input1 form-control" type="number" name="pcc" required="required" placeholder="Pus Cell Clumps">
+					<span class="shadow-input1"></span>
+				</div>
+				<div class="container-contact1-form-btn">
+					<button type="submit" class="contact1-form-btn">
+						<span>
+							Predict
+							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+		<div align="center">
+			<h1>{{ prediction_text }}</h1>
+		</div>
+	</div>
+
+
+
+
+	<script src="{{ url_for('static', filename='vendor/jquery/jquery-3.2.1.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='vendor/tilt/tilt.jquery.min.js')}}"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+
+
+
+</body>
+</html>

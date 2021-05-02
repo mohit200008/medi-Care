@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Heart Disease</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css"
+		href="{{ url_for('static', filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css')}}">
+
+</head>
+<body>
+
+	<div class="contact1">
+		<div class="container-contact1">
+			<div class="contact1-pic js-tilt" data-tilt>
+				<img src="{{ url_for('static', filename='images/heart.jpg')}}" style="border-radius: 50%;" alt="IMG">
+			</div>
+
+			<form action="{{ url_for('predict')}}" method="post" class="contact1-form">
+				<span class="contact1-form-title">
+					Take Heart Disease Test
+				</span>
+
+				<div class="wrap-input1">
+					
+					<select style="height: 50px; border-radius: 25px; padding: 0 30px; border-color:white;" class="form-control input1" id="cp" name="cp" required="required" placeholder="Chest Pain Type">
+						<option hidden>Chest Pain Type</option>
+						<option value="1">Typical Angina</option>
+						<option value="2">Atypical Angina</option>
+						<option value="3">Non-Anginal Pain</option>
+						<option value="4">Asymptomatic</option>
+					</select>
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1" >
+					<input class="form-control input1" type="number" name="trestbps" required="required" placeholder="Resting Blood Sugar">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1">
+					<input class="form-control input1" type="number" name="chol" step="any" required="required" placeholder="Serum Cholestrol in mg/dl">
+					<span class="shadow-input1"></span>
+				</div>
+					<div class="wrap-input1">
+					
+						<select style="height: 50px; border-radius: 25px; padding: 0 30px; border-color:white;" class="form-control input1" id="fbs" name="fbs" required="required" placeholder="Fasting Blood Sugar">
+							<option hidden>Fasting Blood Sugar</option>
+							<option value="0">Fasting Blood Sugar &lt; 120 mg/dl</option>
+							<option value="1">Fasting Blood Sugar &gt; 120 mg/dl</option>
+						</select>
+						<span class="shadow-input1"></span>
+					</div>
+				<div class="wrap-input1">
+				
+					<select style="height: 50px; border-radius: 25px; padding: 0 30px; border-color:white;" class="form-control input1" id="restecg" name="restecg" required="required" placeholder="Resting Electro-Cardiographic Result">
+						<option hidden>Resting Electro-Cardiographic Result</option>
+						<option value="0">Normal</option>
+						<option value="1">Having ST-T Wave Abnormality</option>
+						<option value="2">Showing probable or definite left Ventricular Hypertrophy</option>
+					</select>
+					<span class="shadow-input1"></span>
+				</div>
+					
+				<div class="wrap-input1"> 
+					<input class="form-control input1" type="number" name="thalach" required="required" placeholder="Maximum Heart Rate Achieved">
+					<span class="shadow-input1"></span>
+				</div>
+					<div class="wrap-input1">
+					
+						<select style="height: 50px; border-radius: 25px; padding: 0 30px; border-color:white;" class="form-control input1" id="exang" name="exang" required="required" placeholder="Exercise Induced Angina">
+							<option hidden>Exercise Induced Angina</option>
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</select>
+						<span class="shadow-input1"></span>
+					</div>
+				<div class="container-contact1-form-btn">
+					<button type="submit" class="contact1-form-btn">
+						<span>
+							Predict
+							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="{{ url_for('static', filename='vendor/jquery/jquery-3.2.1.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='vendor/tilt/tilt.jquery.min.js')}}"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+</body>
+</html>

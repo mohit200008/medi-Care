@@ -1,0 +1,59 @@
+{
+  "name": "navbar-dropdown-v1",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-regular-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "@tensorflow/tfjs-converter": "^2.7.0",
+    "@tensorflow/tfjs-core": "^2.7.0",
+    "@tensorflow/tfjs-layers": "^2.7.0",
+    "ace-css": "^1.1.0",
+    "d3-format": "^1.3.2",
+    "face-api.js": "^0.22.2",
+    "firebase": "^8.2.1",
+    "react-dropzone": "^11.2.4",
+    "react-s3-uploader": "^5.0.0",
+    "react-datepicker": "^3.3.0",
+    "restuta-react-dropzone-s3-uploader": "^0.20.4",
+    "tslib": "^1.9.3",
+    "axios": "^0.21.1",
+    "web-vitals": "^0.2.4",
+    "notistack": "^1.0.3",
+    "react-simple-chatbot": "^0.6.1",
+    "styled-components": "^5.2.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

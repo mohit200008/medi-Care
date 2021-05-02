@@ -1,0 +1,128 @@
+.bmi {
+    font-family: "Montserrat";
+    /* font-weight: 900; */
+  }
+  .bmi__firstPage {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .bmi__calculatorContainer {
+    display: grid;
+    place-items: center;
+  }
+  .bmi__calculatorHeading {
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Montserrat";
+    letter-spacing: 1.1px;
+  }
+  .BmiSmall{
+    padding-top: 50px;
+    font-family: "Montserrat";
+    font-size: 20px;
+  }
+  .BmiLarge{
+    font-size: 50px;
+    font-family: "Montserrat";
+    font-weight: 400;
+  }
+  .BmiContent{
+    max-width: 500px;
+    text-align: justify;
+    padding-bottom: 10px;
+  }
+  .bmi__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    padding: 20px 25px;
+    height: 330px;
+    max-width: 300px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px -6px #000;
+  }
+  .bmi__form .MuiButton-root {
+    background-color: #47b8a9 !important;
+    color: #ffffff !important;
+    width: 100px !important;
+    margin-top: 10px;
+  }
+  .bmi__imgContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    height: 600px;
+  }
+  
+  .bmi__secondPage {
+    padding: 20px 40px;
+  }
+  .bmi__resultContainer {
+    background-color: #fff;
+    box-shadow: 1px 1px 10px -5px #000;
+    padding-bottom: 20px;
+  }
+  .bmi__resultHeader {
+    padding-top: 20px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .bmi__inputData img {
+    max-height: 100%;
+    height: 50px;
+    margin-right: 10px;
+  }
+  .bmi__inputData {
+    flex: 1;
+    display: grid;
+    place-items: center;
+  }
+  .bmi__inputData div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bmi__resultData {
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Fjalla One";
+  }
+  .bmi__resultBMI {
+    font-size: 30px;
+  }
+  .bmi__resultMessage {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  
+  .bmi__waterContainer {
+    display: grid;
+    place-items: center;
+    margin-top: 30px;
+    padding-top: 10px;
+    background-color: rgb(244, 251, 253);
+  }
+  .bmi__waterContainer img {
+    width: 100px;
+  }
+  .bmi__waterContainer p {
+    padding: 10px;
+  }
+  
+  .bmi__recommendations {
+    width: 70%;
+    margin: 20px auto;
+  }
+  
+  .bmi__recommendations table {
+    border: 1px solid #32a899;
+    padding: 10px;
+  }
+  .bmi__recommendations table td {
+    padding: 10px;
+    margin: 0;
+  }
+  
