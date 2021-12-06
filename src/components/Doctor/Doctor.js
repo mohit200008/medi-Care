@@ -1,23 +1,21 @@
-import React, { Component } from 'react'
+import React, {useState, useEffect, Component } from 'react'
 import { BrowserRouter as Router } from "react-router-dom";
 import './Doctors.css';
 import axios from 'axios'
 
-export class Doctor extends Component {
-    state = {
-        venues: []
-      }
+const Doctor = () => {
+    const [state, setState] = useState({venues: []});
+
+      useEffect(()=>{
+        getVenues();
+      });
     
-      componentDidMount() {
-        this.getVenues()
-      }
-    
-      renderMap = () => {
+      const renderMap = () => {
         loadScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyD1DrDBUd6GNL2EIBCxK-K0OjkTny8kbuA&callback=initMap")
-        window.initMap = this.initMap
+        window.initMap = initMap
       }
     
-      getVenues = () => {
+      const getVenues = () => {
         const endPoint = "https://api.foursquare.com/v2/venues/explore?"
         const parameters = {
           client_id: "PMHC2WA1VCBHVYOPPSJ0QSBYTLRF4PNJ04OWVWV0PZJ0QFIR",
@@ -29,9 +27,9 @@ export class Doctor extends Component {
     
         axios.get(endPoint + new URLSearchParams(parameters))
           .then(response => {
-            this.setState({
+            setState({
               venues: response.data.response.groups[0].items
-            }, this.renderMap())
+            }, renderMap())
           })
           .catch(error => {
             console.log("ERROR!! " + error)
@@ -39,7 +37,7 @@ export class Doctor extends Component {
     
       }
     
-      initMap = () => {
+      const initMap = () => {
         var map = new window.google.maps.Map(document.getElementById('map'), {
           center: {lat: 28.5672, lng: 77.2100},
           zoom: 12
@@ -47,7 +45,7 @@ export class Doctor extends Component {
     
         var infowindow = new window.google.maps.InfoWindow()
     
-        this.state.venues.map(myVenue => {
+        state.venues.map(myVenue => {
     
           var contentString = `${myVenue.venue.name}`
     
@@ -67,7 +65,7 @@ export class Doctor extends Component {
         })
     
       }
-    render() {
+
         return (
             <>
       <div className="info">
@@ -147,7 +145,6 @@ export class Doctor extends Component {
           </main>
     </>
         )
-    }
 }
 function loadScript(url) {
     var index  = window.document.getElementsByTagName("script")[0]
