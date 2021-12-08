@@ -1,65 +1,59 @@
-import React, {useState, useEffect, Component } from 'react'
-import { BrowserRouter as Router } from "react-router-dom";
+import React, {useState, useEffect} from 'react'
+import {Link} from "react-router-dom";
 import './Doctors.css';
 import axios from 'axios'
 
 const Doctor = () => {
     const [state, setState] = useState({venues: []});
-
-      useEffect(()=>{
+      useEffect( ()=>{
         getVenues();
-      });
+      },[]);
     
       const renderMap = () => {
-        loadScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyD1DrDBUd6GNL2EIBCxK-K0OjkTny8kbuA&callback=initMap")
-        window.initMap = initMap
+        window.initMap = initMap;
+        loadScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyD1DrDBUd6GNL2EIBCxK-K0OjkTny8kbuA&callback=initMap");
       }
     
-      const getVenues = () => {
-        const endPoint = "https://api.foursquare.com/v2/venues/explore?"
+      const getVenues = async() => {
+        const endPoint = "https://api.foursquare.com/v2/venues/explore?";
         const parameters = {
           client_id: "PMHC2WA1VCBHVYOPPSJ0QSBYTLRF4PNJ04OWVWV0PZJ0QFIR",
           client_secret: "CULSZZ44YAEBOWBFGPB4BF5ISRXXSNYR0EE3JV3CNE2ZWHV0",
           query: "doctor",
           near: "Delhi",
           v: "20182507"
-        }
+        };
     
-        axios.get(endPoint + new URLSearchParams(parameters))
-          .then(response => {
-            setState({
-              venues: response.data.response.groups[0].items
-            }, renderMap())
-          })
-          .catch(error => {
-            console.log("ERROR!! " + error)
-          })
-    
+        const response = await axios.get(endPoint + new URLSearchParams(parameters));
+        setState({
+          venues: response.data.response.groups[0].items
+        });
+        renderMap();
       }
     
       const initMap = () => {
-        var map = new window.google.maps.Map(document.getElementById('map'), {
+        const map = new window.google.maps.Map(document.getElementById("map"), {
           center: {lat: 28.5672, lng: 77.2100},
           zoom: 12
-        })
+        });
     
-        var infowindow = new window.google.maps.InfoWindow()
+        const infowindow = new window.google.maps.InfoWindow();
     
         state.venues.map(myVenue => {
     
-          var contentString = `${myVenue.venue.name}`
+          const contentString = `${myVenue.venue.name}`;
     
-          var marker = new window.google.maps.Marker({
+          const marker = new window.google.maps.Marker({
             position: {lat: myVenue.venue.location.lat , lng: myVenue.venue.location.lng},
             map: map,
             title: myVenue.venue.name
-          })
+          });
     
           marker.addListener('click', function() {
     
-            infowindow.setContent(contentString)
+            infowindow.setContent(contentString);
     
-            infowindow.open(map, marker)
+            infowindow.open(map, marker);
           })
     
         })
@@ -74,7 +68,7 @@ const Doctor = () => {
       <div className="card-text">
         <h2>Dr. Kiran Dev</h2>
         <p>Physician</p>
-        <a href="./Details" className="btn-flip" data-back="Book" data-front="Set Appointment"></a>
+        <Link to="/Details" className="btn-flip" data-back="Book" data-front="Set Appointment"></Link>
       </div>
       <div className="card-stats">
         <div className="stat">
@@ -96,7 +90,7 @@ const Doctor = () => {
       <div className="card-text card2">
         <h2>Dr. Rahul Kumar</h2>
         <p>Dermatologist</p>
-        <a href="./Details" className="btn-flip" data-back="Book" data-front="Set Appointment"></a>
+        <Link to="/Details" className="btn-flip" data-back="Book" data-front="Set Appointment"></Link>
       </div>
       <div className="card-stats card2">
       <div className="stat">
@@ -118,7 +112,7 @@ const Doctor = () => {
         <div className="card-text card3">
           <h2>Dr. Emily Sharma</h2>
           <p>Psychiatrist, Neurologist</p>
-        <a href="./Details" className="btn-flip" data-back="Book" data-front="Set Appointment"></a>
+        <Link to="/Details" className="btn-flip" data-back="Book" data-front="Set Appointment"></Link>
         </div>
         <div className="card-stats card3">
         <div className="stat">
@@ -152,7 +146,7 @@ function loadScript(url) {
     script.src = url
     script.async = true
     script.defer = true
-    index.parentNode.insertBefore(script, index)
+    index.parentNode.insertBefore(script, index);
   }
 
 export default Doctor
