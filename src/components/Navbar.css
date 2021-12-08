@@ -1,16 +1,18 @@
 .navbar {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
-  height: 80px;
-  display: flex;
+background-color: #393E46;
+  height: 100px;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
 }
 
 .navbar-logo {
-  color: #fff;
+  color: #EEEEEE;
   justify-self: start;
-  margin-left: 20px;
+  margin-left: 10px;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
@@ -45,7 +47,7 @@
 }
 
 .nav-links:hover {
-  background-color: #1888ff;
+  background-color: #34ced6;
   border-radius: 4px;
   transition: all 0.2s ease-out;
 }
@@ -95,7 +97,7 @@
   }
 
   .nav-links:hover {
-    background-color: #1888ff;
+    background-color: #233E8B;
     border-radius: 0;
   }
 
