@@ -18,7 +18,7 @@ function Details() {
 {/* <Router>
   <Navbar/>
 </Router> */}
-<form class="box" onSubmit={handleSubmit}>
+<form className="box" onSubmit={handleSubmit}>
   <h1>Enter your Details</h1>
   <input type="text" name="" placeholder="Full Name" />
   <input type="text" name="" placeholder="Age" />
