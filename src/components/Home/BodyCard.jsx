@@ -4,18 +4,19 @@ import styled from "styled-components";
 const Container = styled.div`
   width: 80%;
   height: 65vh;
-  margin: 0.2rem auto;
+  margin: 0.1rem auto;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   box-sizing: border-box;
   img {
-    max-width: 100%;
-    height: 100%;
+    max-width: 80%;
+    height: 70%;
     opacity: 0.8;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top:5%;
     border-radius: 2rem;
+    border: 5px solid #444444;
+    
   }
   .text {
     width: 100%;
@@ -23,11 +24,16 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     padding: 0 0 0 0;
     h1 {
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: bold;
+      text-align:center;
+    }
+    p{
+      font-size: 1.3rem;
+      font-family: "Open Sans", sans-serif;
+      text-align:left;
     }
   }
   @media (max-width: 768px) {
