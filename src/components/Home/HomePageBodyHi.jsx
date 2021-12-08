@@ -8,11 +8,12 @@ const Container = styled.div`
   box-sizing: border-box;
   background-color: #f9f9f9;
   h1 {
-    font-size: 150%;
+    margin-top:10px;
+    font-size: 3rem;
     font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
   }
-
-  // media quries
   @media (max-width: 768px) {
     width: 100%;
     h1 {
