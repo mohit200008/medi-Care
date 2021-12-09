@@ -66,54 +66,93 @@ From the project folder, run these commands in console (terminal) to install dep
 
 ## 🧑‍💻 How to contribute? 🧑‍💻
 
-### let's discuss how you can contribute to *MediCare* 🙌
+# 💥 How to Contribute
 
-**STEP 1** Open the MediCare project
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/mohit200008/medi-Care/pulls)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-**STEP 2** Raise an issue on whatever changes you want to make on. If you find any bug, report there. Once you are assigned to do the changes by the owner, you are good to go.
+- Take a look at the existing [Issues](https://github.com/mohit200008/medi-Care/issues) or [create a new issue](https://github.com/mohit200008/medi-Care/issues/new/choose)!
+- [Fork the Repo](https://github.com/mohit200008/medi-Care/fork), create a branch for any issue that you are working on and commit your work.
+- Create a **[Pull Request](https://github.com/mohit200008/medi-Care/compare)** (_PR_), which will be promptly reviewed and given suggestions for improvements by the community.
+- Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes that are included in your commits.
 
-**STEP 3** Click on fork to fork the repo.Forks act as a sort of bridge between the original repository and your personal copy. It is present in the top right corner of the github page.
+## ⭐ HOW TO MAKE A PULL REQUEST:
 
-**STEP 4** Click on star⭐ to Star the repository (MediCare)
+**1.** Start by making a fork the [**medi-Care**](https://github.com/mohit200008/medi-Care) repository. Click on the <a href="https://github.com/mohit200008/FoodSaver20008/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a> symbol at the top right corner.
 
-**STEP 5** Click on code button and copy the URL 
+**2.** Clone your new fork of the repository:
 
-**STEP 6** Clone the project on your own machine
+```bash
+git clone https://github.com/<your-github-username>/medi-Care
+```
 
-` git clone <URL> `     👈🏻 To create a copy of the repo on your system.
+**3.** Set upstream command:
 
-**STEP 7** Change the branch. For that , you have to write these commands:
+```bash
+git remote add upstream https://github.com/mohit200008/medi-Care.git
+```
 
-`git branch <branchname> `   👈🏻 To create a new branch
+**4.** Navigate to the new project directory:
 
-`git branch `   👈🏻 To see what all branches you have in your system
+```bash
+cd medi-Care
+```
 
-`git checkout <branchname> `   👈🏻 To move from one branch to other.
+**5.** Create a new branch:
 
-**STEP 8** Change whatever you want to change in the code.
+```bash
+git checkout -b YourBranchName
+```
 
-**STEP 9** Now, you have to bring your file from unstaged area to the staged area. For that, you have to add your modified file in the current branch.
+**6.** Sync your fork or local repository with the origin repository:
 
-`git add <modified_filename> `   👈🏻 To move a file from unstaged area to staged area.
+- In your forked repository click on "Fetch upstream"
+- Click "Fetch and merge".
 
-**STEP 10** Now, time to commit.
+### Alternatively, Git CLI way to Sync forked repository with origin repository:
 
-`git commit -m "your message" `   👈🏻 command for commit
+```bash
+git fetch upstream
+```
 
-**STEP 11** Time to push !!
+```bash
+git merge upstream/main
+```
 
-`git remote rm origin `   
+### [Github Docs](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github) for Syncing
 
-`git remote add origin <URL> `  
- 
-`git push origin <branchname> `   
+**7.** Make your changes to the source code.
 
-**STEP 12** Now, go to the github repository. there will be a pop up showing "compare and pull request". click on that. Write description of your changes and then confirm your pull request.
+**8.** Stage your changes and commit:
 
-**NOTE:** Never push from master/main branch. Create your own branch and then push. 
+```bash
+git add .
+```
 
-**AND VOILA!! YOU ARE DONE!!**
- 
+```bash
+git commit -m "<your_commit_message>"
+```
+
+**9.** Push your local commits to the remote repository:
+
+```bash
+git push origin YourBranchName
+```
+
+**10.** Create a [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)!
+
+**11.** **Congratulations!** You've made your first contribution! 🙌🏼
+
+
+
+## All the best! 🥇
+
+<p align="center">
+
+[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/unnati914/Care4ther-)
+
+</p>
+
 
  ### Keep smiling 😄
  ### Happy coding 🥳
