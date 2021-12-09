@@ -79,24 +79,33 @@ From the project folder, run these commands in console (terminal) to install dep
 **STEP 5** Click on code button and copy the URL 
 
 **STEP 6** Clone the project on your own machine
+
 ` git clone <URL> `     👈🏻 To create a copy of the repo on your system.
 
 **STEP 7** Change the branch. For that , you have to write these commands:
+
 `git branch <branchname> `   👈🏻 To create a new branch
+
 `git branch `   👈🏻 To see what all branches you have in your system
+
 `git checkout <branchname> `   👈🏻 To move from one branch to other.
 
 **STEP 8** Change whatever you want to change in the code.
 
 **STEP 9** Now, you have to bring your file from unstaged area to the staged area. For that, you have to add your modified file in the current branch.
+
 `git add <modified_filename> `   👈🏻 To move a file from unstaged area to staged area.
 
 **STEP 10** Now, time to commit.
+
 `git commit -m "your message" `   👈🏻 command for commit
 
 **STEP 11** Time to push !!
+
 `git remote rm origin `   
-`git remote add origin <URL> `   
+
+`git remote add origin <URL> `  
+ 
 `git push origin <branchname> `   
 
 **STEP 12** Now, go to the github repository. there will be a pop up showing "compare and pull request". click on that. Write description of your changes and then confirm your pull request.
