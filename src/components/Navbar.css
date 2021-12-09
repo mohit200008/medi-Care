@@ -1,21 +1,30 @@
 .navbar {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
-  height: 80px;
-  display: flex;
+background-color: #393E46;
+  height: 100px;
+  top:0;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  overflow: hidden;
+  width: 100%;
 }
 
 .navbar-logo {
-  color: #fff;
+  color: #EEEEEE;
   justify-self: start;
-  margin-left: 20px;
+  margin-left: 10px;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
 }
 
+.navbar-logo:hover{
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
 .fa-firstdraft {
   margin-left: 0.5rem;
   font-size: 1.6rem;
@@ -30,6 +39,7 @@
   width: 70vw;
   justify-content: end;
   margin-right: 2rem;
+  
 }
 
 .nav-item {
@@ -45,8 +55,9 @@
 }
 
 .nav-links:hover {
-  background-color: #1888ff;
-  border-radius: 4px;
+  background-color: #34ced6;
+  border-radius: 12px;
+  text-decoration: none;
   transition: all 0.2s ease-out;
 }
 
@@ -95,8 +106,10 @@
   }
 
   .nav-links:hover {
-    background-color: #1888ff;
+    background-color: #233E8B;
     border-radius: 0;
+    text-decoration: none;
+
   }
 
   .navbar-logo {
@@ -138,6 +151,7 @@
     background: #fff;
     color: #1888ff;
     transition: 250ms;
+    text-decoration: none;
   }
 
   button {

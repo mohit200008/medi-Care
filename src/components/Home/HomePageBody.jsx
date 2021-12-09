@@ -8,8 +8,11 @@ const Container = styled.div`
   box-sizing: border-box;
   background-color: #f9f9f9;
   h1 {
-    font-size: 150%;
+    margin-top:10px;
+    font-size: 3rem;
     font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
   }
 
   // media quries
@@ -24,16 +27,16 @@ const Container = styled.div`
 function HomePageBody() {
   return (
     <Container>
-      <h1>Why health is essential?</h1>
+      <h1>Why is health essential?</h1>
       <BodyCard
         img="https://i.pinimg.com/originals/8a/28/8f/8a288fc55156d4dceffe0b47cb9c89ea.jpg"
-        para="Health care is essential for everyone, weather its a men or women"
+        para="Health is the factor that helps a person perform his daily life tasks in a correct and right way. Health care is essential for everyone, whether its a men or women."
         id={1}
       />
       <BodyCard
         img="https://i.pinimg.com/originals/a3/04/05/a30405aa47967c5b9ab46896312df093.jpg"
         heading="Stay Healthy"
-        para="Useing this web application women can easily keep tack of their health."
+        para="Using this web application women can easily keep track of their health."
         id={2}
       />
     </Container>
