@@ -6,6 +6,7 @@ const Container = styled.div`
   height: 80vh;
   background-image: url("https://www.cpajournal.com/wp-content/uploads/2019/02/GettyImages-1001713236-730x330.jpg");
   background-size: cover;
+  margin-bottom: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;

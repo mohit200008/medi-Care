@@ -9,6 +9,8 @@ import Chatbot from './components/Chatbot/Chatbot';
 import DiseaesPred from './components/DiseasePred/DiseaseDetection';
 import Doctor from './components/Doctor/Doctor';
 import Details from './components/Doctor/Details';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
   return (
     <Router>
