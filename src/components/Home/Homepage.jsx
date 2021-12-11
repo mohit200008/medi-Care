@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 // components
 import HomePageBody from "./HomePageBody";
-import HomePageHeader from "./HomePageHeader";
+// import HomePageHeader from "./HomePageHeader";
 import HomePageSlider from "./HomePageSlider";
 
 const Container = styled.div``;
@@ -11,7 +11,7 @@ const Container = styled.div``;
 function HomePage() {
   return (
     <Container>
-      <HomePageHeader />
+      {/* <HomePageHeader /> */}
       <HomePageSlider />
       <HomePageBody />
     </Container>
