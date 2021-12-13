@@ -5,6 +5,7 @@ import styled from "styled-components";
 import HomePageBody from "./HomePageBody";
 // import HomePageHeader from "./HomePageHeader";
 import HomePageSlider from "./HomePageSlider";
+import Footer from "./Footer";
 
 const Container = styled.div``;
 
@@ -14,6 +15,7 @@ function HomePage() {
       {/* <HomePageHeader /> */}
       <HomePageSlider />
       <HomePageBody />
+      <Footer />
     </Container>
   );
 }
