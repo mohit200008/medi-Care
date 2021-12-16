@@ -1,15 +1,14 @@
 .navbar {
-background-color: #393E46;
-  height: 100px;
-  top:0;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  overflow: hidden;
-  width: 100%;
+    background: linear-gradient(
+90deg,#1c1b1ba3,#1a171780);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
 }
 
 .navbar-logo {
