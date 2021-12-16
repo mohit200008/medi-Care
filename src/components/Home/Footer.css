@@ -29,7 +29,7 @@ body{
         background:linear-gradient1(45deg, rgb(67, 58, 172) 0%, rgb(23, 95, 155) 81%, rgb(91, 139, 179) 100%);
     }
     100%{
-        background: linear-gradient(145deg, rgb(81, 45, 150) 0%, rgb(91, 59, 150) 81%,rgb(131, 73, 158)) 100%);
+        background: linear-gradient(145deg, rgb(81, 45, 150) 0%, rgb(91, 59, 150) 81%,rgb(131, 73, 158) 100%);
     }
 }
 .footer .social{
