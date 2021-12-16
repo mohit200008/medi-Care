@@ -27,7 +27,7 @@ MediCare is a one stop location to discuss about different medical milestones, A
 
 ## 🎖️ Screenshots 🎖️
 Home page
-![home eng](https://user-images.githubusercontent.com/64153988/112758615-eae7d000-900c-11eb-9f67-3c4831cd3107.png)
+![home eng](./src/img1.jpeg)
 Disease Prediction
 ![disease pred](https://user-images.githubusercontent.com/64153988/112758613-e91e0c80-900c-11eb-8688-97900e5fa363.png)
 Smart BMI Calculator
