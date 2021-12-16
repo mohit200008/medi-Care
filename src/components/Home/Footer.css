@@ -13,22 +13,23 @@ body{
 }
 
 .footer{
-    padding: 15px 0 ;
+    padding: 0px 0px ;
     background: rgb(2,0,36);
-    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,68,121,1) 81%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(45deg, rgb(76, 233, 233) 0%, rgb(21, 66, 105) 81%, rgb(140, 74, 202) 100%);
     margin-top: 100vh;
+    margin-bottom: 0px;
     animation: toggleColor 4000ms cubic-bezier(1, 0, 0.13, 1.01) infinite;
     height: 165px;
 }
 @keyframes toggleColor {
     0%{
-        background: linear-gradient(145deg, rgb(83, 83, 87) 0%, rgb(132, 138, 144) 81%, rgb(77, 82, 83) 100%);
+        background: linear-gradient(145deg, rgb(64, 227, 233) 0%, rgb(15, 101, 122) 81%, rgb(28, 90, 131) 100%);
     }
     50%{
-        background:linear-gradient1(45deg, rgb(106, 105, 116) 0%, rgb(76, 82, 87) 81%, rgrgb(74, 80, 82)00%);
+        background:linear-gradient1(45deg, rgb(67, 58, 172) 0%, rgb(23, 95, 155) 81%, rgb(91, 139, 179) 100%);
     }
     100%{
-        background: linear-gradient(145deg, rgb(70, 70, 75) 0%, rgb(67, 71, 75) 81%, rgb(88, 95, 97) 100%);
+        background: linear-gradient(145deg, rgb(81, 45, 150) 0%, rgb(91, 59, 150) 81%,rgb(131, 73, 158)) 100%);
     }
 }
 .footer .social{
@@ -49,7 +50,7 @@ body{
     display: inline-block;
     text-align: center;
     border-radius: 50%;
-    margin: 3px 8px;
+    margin: 15px 8px;
     transition: all .3s;
     opacity: 0.80;
     margin-left: -103px;
@@ -57,15 +58,15 @@ body{
 .footer .social a:hover{
     opacity: 1;
     /* background: #4475e2; */
-    background: #22ceec;
-    color: rgb(17, 31, 151);
+    background: #020168;
+    color: #fff;
     transform: translateY(5px);
 }
 .footer ul{
     margin-top: 0;
     padding: 10;
     list-style: none;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.8em;
     margin-bottom: 0;
     text-align: center;
@@ -81,14 +82,14 @@ body{
 }
 .footer ul li a:hover{
     opacity: 1;
-    color: #03345f;
+    color: #fff;
     font-weight: 700;
 }
 .nav-links{
     border-radius: 50px;
 }
 .nav-links:hover{
-    background: #22ceec;
+    background: #020168;
     /* color: #03345f; */
     cursor: pointer;
     transform: translateY(5px);
@@ -103,15 +104,19 @@ body{
 }
 
 .footer .copyright{
-    margin-top: 20px;
-    text-align: center;
+    padding: 10px;
+    margin-top: 5px;
+    margin-right: 0;
+    text-align: end;
     font-size: 18px;
     color: rgb(255, 255, 255);
 }
 
-
 @media only screen and(max-width:400px)
 {
+    .footer{
+        padding: 0px;
+    }
     .footer ul .list1{
         display: inline-block;
     }
