@@ -27,18 +27,18 @@ MediCare is a one stop location to discuss about different medical milestones, A
 
 ## 🎖️ Screenshots 🎖️
 Home page
-![home eng](https://user-images.githubusercontent.com/64153988/112758615-eae7d000-900c-11eb-9f67-3c4831cd3107.png)
+![home eng](./src/img2.jpeg)
 Disease Prediction
-![disease pred](https://user-images.githubusercontent.com/64153988/112758613-e91e0c80-900c-11eb-8688-97900e5fa363.png)
+![disease pred](./src/img1.jpeg)
 Smart BMI Calculator
-![calculate bmi](https://user-images.githubusercontent.com/64153988/112758621-ecb19380-900c-11eb-948d-5d7f85d28c12.png)
-![bmi result](https://user-images.githubusercontent.com/64153988/112758618-eb806680-900c-11eb-8866-3cdcfe3fc659.png)
+![calculate bmi](./src/img3.jpeg)
+![bmi result](./src/img5.jpeg)
 Search for doctor
-![select doctor](https://user-images.githubusercontent.com/64153988/112758617-eb806680-900c-11eb-8d41-c7abc9504347.png)
+![select doctor](./src/img4.jpeg)
 Doctor booking
-![booking detail](https://user-images.githubusercontent.com/64153988/112758620-ec18fd00-900c-11eb-856a-700174bc5a92.png)
+![booking detail](./src/img6.jpeg)
 Smart Chatbot
-![chatbot](https://user-images.githubusercontent.com/64153988/112758623-ecb19380-900c-11eb-88eb-2e17fc36d0ec.png)
+![chatbot](./src/img7.jpeg)
 
 
 # 🏥 Dataset used 🏥
