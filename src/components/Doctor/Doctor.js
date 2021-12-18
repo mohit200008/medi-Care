@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import './Doctors.css';
 import './Map.css';
 import axios from 'axios'
+import DoctorForm from './DoctorForm';
 
 const Doctor = () => {
   const map = useRef(null);
@@ -48,6 +49,7 @@ const Doctor = () => {
 
   return (
     <>
+      <DoctorForm />
       <div className="info">
         <div className="card">
           <div className="card-image"></div>
