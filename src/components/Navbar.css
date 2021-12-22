@@ -2,13 +2,14 @@
     background: linear-gradient(
 90deg,#1c1b1ba3,#1a171780);
     height: 80px;
-    position: fixed;
+    position: fixed !important;
+    top: 0;
     width: 100%;
-    border-radius: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    z-index: 9999;
 }
 
 .navbar-logo {
@@ -18,11 +19,18 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
+  font-weight: 700;
 }
 
 .navbar-logo:hover{
   text-decoration: none;
   transition: all 0.2s ease-out;
+  background: #00D4DB;
+background: -webkit-linear-gradient(to right, #00D4DB 34%, #72ADCF 81%);
+background: -moz-linear-gradient(to right, #00D4DB 34%, #72ADCF 81%);
+background: linear-gradient(to right, #00D4DB 34%, #72ADCF 81%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 .fa-firstdraft {
   margin-left: 0.5rem;
@@ -54,10 +62,11 @@
 }
 
 .nav-links:hover {
-  background-color: #34ced6;
+  background-image: linear-gradient(to right, #25aae1, #3f86ed);
+  color: black;
   border-radius: 12px;
   text-decoration: none;
-  transition: all 0.2s ease-out;
+  font-weight: 500;
 }
 
 .fa-bars {
@@ -70,6 +79,20 @@
 
 .menu-icon {
   display: none;
+}
+
+#change-language{
+  background-color: #a3eef1;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  color: green;
+}
+
+#change-language:hover {
+  background-color: #16c3c9;
+  color: greenyellow;
+  background-image: linear-gradient(to right, #25aae1, #3f86ed);
 }
 
 @media screen and (max-width: 960px) {
@@ -105,7 +128,7 @@
   }
 
   .nav-links:hover {
-    background-color: #233E8B;
+    background-color:rgb(77, 77, 77);
     border-radius: 0;
     text-decoration: none;
 
@@ -149,7 +172,6 @@
   .nav-links-mobile:hover {
     background: #fff;
     color: #1888ff;
-    transition: 250ms;
     text-decoration: none;
   }
 

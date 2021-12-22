@@ -50,7 +50,7 @@ function Navbar() {
             </Link>
           </li>
           <li className='nav-item'>
-            <Link to='/hi' className='nav-links' style={{color: "green"}} onClick={closeMobileMenu}>
+            <Link to='/hi' className='nav-links' id='change-language' onClick={closeMobileMenu}>
             A/आ
             </Link>
           </li>
