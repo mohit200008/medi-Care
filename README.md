@@ -7,9 +7,9 @@ Hence, we came up with the idea of providing the people all over the world an we
 MediCare is a one stop location to discuss about different medical milestones, AI Disease prediction system, locate nearby hospitals to get proper medical care, and finally a translator to get the whole web app in the language one is comfortable with and hence dissolve any communication barrier. This solution with shorten the gap between the people around the world in search for good healthcare and pave a path in the journey of recovery.
 
 ## 💡 Demo 💡
-➡️ The live demo can be checkout from [here](http://medicarewebste.herokuapp.com/)
+➡️ The live demo can be checkout from [here](https://medi-care-phi.vercel.app/)
 
-➡️ The demo video of the project can be used [here](https://youtu.be/C-avaGP2-M8)
+➡️ The demo video of the project can be used [here](https://www.youtube.com/watch?v=C-avaGP2-M8&ab_channel=MohitLamba)
 
 ## 💪🏻 How we built it 💪🏻
 - For frontend we have used React Js.
