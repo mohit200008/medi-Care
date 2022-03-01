@@ -33,6 +33,7 @@
     "react-s3-uploader": "^5.0.0",
     "react-scripts": "3.4.1",
     "react-simple-chatbot": "^0.6.1",
+    "react-transition-group": "^4.4.2",
     "restuta-react-dropzone-s3-uploader": "^0.20.4",
     "styled-components": "^5.2.1",
     "tslib": "^1.9.3",

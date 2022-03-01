@@ -1,12 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState,useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import "./Button_Animation.css";
 
 function Navbar() {
   const [click, setClick] = useState(false);
+  const btnRef = useRef();
   const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+  const closeMobileMenu = () =>{ 
+    
+    btnRef.current.classList.add("btn-animation")
+    setClick(false)};
 
+  
   return (
     <>
       <nav className='navbar'>
@@ -50,7 +56,7 @@ function Navbar() {
             </Link>
           </li>
           <li className='nav-item'>
-            <Link to='/hi' className='nav-links' id='change-language' onClick={closeMobileMenu}>
+            <Link to={(!click)?'/hi':''} className='nav-links ' id='change-language' onClick={closeMobileMenu} ref={btnRef}>
             A/आ
             </Link>
           </li>
