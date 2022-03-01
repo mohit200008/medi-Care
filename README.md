@@ -16,7 +16,7 @@ MediCare is a one stop location to discuss about different medical milestones, A
 
 ## 💪🏻 How we built it 💪🏻
 - For frontend we have used React Js.
-- For Disease prediction we have used Flask.
+- For Disease prediction we have used django.
 - For styling we have used CSS and Bootstrap.
 
 ## 🎖️ Accomplishments that we're proud of 🎖️
