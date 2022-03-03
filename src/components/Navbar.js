@@ -8,10 +8,12 @@ function Navbar() {
   const btnRef = useRef();
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () =>{ 
+   
     
-    btnRef.current.classList.add("btn-animation")
-    setClick(false)};
-
+    setClick(false)
+   
+};
+    
   
   return (
     <>
@@ -56,9 +58,16 @@ function Navbar() {
             </Link>
           </li>
           <li className='nav-item'>
-            <Link to={(!click)?'/hi':''} className='nav-links ' id='change-language' onClick={closeMobileMenu} ref={btnRef}>
+           
+            <Link to="/hi" className='nav-links ' id='change-language' onClick={  closeMobileMenu } 
+
+            //button rubberband animation
+            onMouseDown ={ e =>e.currentTarget.classList.add("btn-animation")}
+            onMouseUp ={ e=> e.currentTarget.classList.remove("btn-animation")}
+            >
             A/आ
             </Link>
+          
           </li>
         </ul>
       </nav>

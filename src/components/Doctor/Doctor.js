@@ -5,6 +5,7 @@ import './Doctors.css';
 import './Map.css';
 import axios from 'axios'
 import DoctorForm from './DoctorForm';
+import "../Button_Animation.css"
 
 const Doctor = () => {
   const map = useRef(null);
@@ -56,7 +57,13 @@ const Doctor = () => {
           <div className="card-text">
             <h2>Dr. Kiran Dev</h2>
             <p>Physician</p>
-            <Link to="/Details" className="btn-flip" data-back="Book" data-front="Set Appointment"></Link>
+            <Link to="/Details" className="btn-flip" data-back="Book" data-front="Set Appointment"
+             
+               //button rubberband animation
+           onMouseDown ={ e =>e.currentTarget.classList.add("btn-animation")}
+           onMouseUp ={ e=> e.currentTarget.classList.remove("btn-animation")}
+            
+            ></Link>
           </div>
           <div className="card-stats">
             <div className="stat">
@@ -78,7 +85,13 @@ const Doctor = () => {
           <div className="card-text card2">
             <h2>Dr. Rahul Kumar</h2>
             <p>Dermatologist</p>
-            <Link to="/Details" className="btn-flip" data-back="Book" data-front="Set Appointment"></Link>
+            <Link to="/Details" className="btn-flip" data-back="Book" data-front="Set Appointment"
+            
+              //button rubberband animation
+             onMouseDown ={ e =>e.currentTarget.classList.add("btn-animation")}
+            onMouseUp ={ e=> e.currentTarget.classList.remove("btn-animation")}
+            
+            ></Link>
           </div>
           <div className="card-stats card2">
             <div className="stat">
@@ -100,7 +113,13 @@ const Doctor = () => {
           <div className="card-text card3">
             <h2>Dr. Emily Sharma</h2>
             <p>Psychiatrist, Neurologist</p>
-            <Link to="/Details" className="btn-flip" data-back="Book" data-front="Set Appointment"></Link>
+            <Link to="/Details" className="btn-flip" data-back="Book" data-front="Set Appointment"
+            
+                  //button rubberband animation
+                onMouseDown ={ e =>e.currentTarget.classList.add("btn-animation")}
+                onMouseUp ={ e=> e.currentTarget.classList.remove("btn-animation")}
+            
+            ></Link>
           </div>
           <div className="card-stats card3">
             <div className="stat">

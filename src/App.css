@@ -7,6 +7,47 @@
 
 
 
+.page-enter {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  
+  /* play page enter animation */
+  .page-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 500ms, transform 500ms;
+  }
+  
+  .page-exit {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  /* play page exit animation */
+  .page-exit-active {
+    opacity: 0;
+    transform: scale(1.1);
+    transition: opacity 500ms, transform 500ms;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* .home {
   background-position: center;
   background-size: cover;

@@ -5,6 +5,7 @@ import { Button } from "@material-ui/core";
 import { InputLabel } from '@material-ui/core';
 import { MenuItem } from '@material-ui/core';
 import { Select } from '@material-ui/core';
+import "../Button_Animation.css"
 
 export default function DoctorForm() {
 
@@ -21,7 +22,12 @@ export default function DoctorForm() {
         <div className={`${formCheck?'':'blur'}`}>
             {
                 formCheck ?
-                    <button onClick={docBtnClick} className='addDocBtn'>Add Doctor</button>
+                    <button onClick={docBtnClick} className='addDocBtn'
+                    
+                    onMouseDown ={ e =>e.currentTarget.classList.add("btn-animation")}
+                     onMouseUp ={ e=> e.currentTarget.classList.remove("btn-animation")}
+                    
+                    >Add Doctor</button>
                     :
                     <div className="doctorFormContainer">
                         <button onClick={docBtnClick} className='closeBtn'>X</button>
@@ -76,7 +82,13 @@ export default function DoctorForm() {
                                         variant="outlined"
                                         multiline
                                     />
-                                    <Button >Submit</Button>
+                                    <Button 
+                                    
+                                    
+                                    onMouseDown ={ e =>e.currentTarget.classList.add("btn-animation")}
+                                    onMouseUp ={ e=> e.currentTarget.classList.remove("btn-animation")}
+                                    
+                                    >Submit</Button>
                             </form>
                         </div>
                     </div>

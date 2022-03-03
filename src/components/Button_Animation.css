@@ -2,8 +2,10 @@
 
 .btn-animation
 {
-   animation: animation-btn 500ms linear 1 forwards;
+    
+    animation: animation-btn 500ms linear 1 forwards;
 }
+
 
 @keyframes animation-btn
 {

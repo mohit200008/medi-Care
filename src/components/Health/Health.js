@@ -3,6 +3,7 @@ import "./Health.css";
 import TextField from "@material-ui/core/TextField";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
+import "../Button_Animation.css"
 
 function Health() {
 
@@ -103,7 +104,12 @@ function Health() {
                     variant="outlined"
                     onChange={(e) => setAge(e.target.value)}
                   />
-                  <Button onClick={handleSubmit}>Calculate</Button>
+                  <Button onClick={handleSubmit} 
+                   //button rubberband animation
+                    onMouseDown ={ e =>e.currentTarget.classList.add("btn-animation")}
+                    onMouseUp ={ e=> e.currentTarget.classList.remove("btn-animation")}
+                  
+                  >Calculate</Button>
                 </form>
               </div>
             </div>
