@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import {BrowserRouter as Router} from "react-router-dom";
-import './Details.css';
+import '../../styles/Details.css';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import Navbar from '../Navbar.js';
 
 
 function Details() {

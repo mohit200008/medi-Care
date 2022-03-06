@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import './DoctorForm.css';
+import '../../styles/DoctorForm.css';
 import TextField from "@material-ui/core/TextField";
 import { Button } from "@material-ui/core";
 import { InputLabel } from '@material-ui/core';
 import { MenuItem } from '@material-ui/core';
 import { Select } from '@material-ui/core';
-import "../Button_Animation.css"
+import "../../styles/Button_Animation.css"
 
 export default function DoctorForm() {
 
