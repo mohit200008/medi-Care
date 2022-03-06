@@ -1,12 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState,useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import "./Button_Animation.css";
 
 function Navbar() {
   const [click, setClick] = useState(false);
+  const btnRef = useRef();
   const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
-
+  const closeMobileMenu = () =>{ 
+   
+    
+    setClick(false)
+   
+};
+    
+  
   return (
     <>
       <nav className='navbar'>
@@ -50,9 +58,16 @@ function Navbar() {
             </Link>
           </li>
           <li className='nav-item'>
-            <Link to='/hi' className='nav-links' id='change-language' onClick={closeMobileMenu}>
+           
+            <Link to="/hi" className='nav-links ' id='change-language' onClick={  closeMobileMenu } 
+
+            //button rubberband animation
+            onMouseDown ={ e =>e.currentTarget.classList.add("btn-animation")}
+            onMouseUp ={ e=> e.currentTarget.classList.remove("btn-animation")}
+            >
             A/आ
             </Link>
+          
           </li>
         </ul>
       </nav>
