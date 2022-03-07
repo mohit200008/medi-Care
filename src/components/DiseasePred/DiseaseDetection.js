@@ -1,6 +1,6 @@
 import React from "react";
-import "./DiseaseDetection.css";
-import "../Button_Animation.css"
+import "../../styles/DiseaseDetection.css";
+import "../../styles/Button_Animation.css"
 
 function DiseaseDetection() {
   return (

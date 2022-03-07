@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./Health.css";
+import "../../styles/Health.css";
 import TextField from "@material-ui/core/TextField";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
-import "../Button_Animation.css"
+import "../../styles/Button_Animation.css"
 
 function Health() {
 

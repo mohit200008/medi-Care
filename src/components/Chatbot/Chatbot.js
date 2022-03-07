@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Chatbot.css";
+import "../../styles/Chatbot.css";
 import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
 import { useHistory } from "react-router-dom";

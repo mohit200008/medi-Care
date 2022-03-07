@@ -1,11 +1,11 @@
 import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import { Link } from "react-router-dom";
-import './Doctors.css';
-import './Map.css';
+import '../../styles/Doctors.css';
+import '../../styles/Map.css';
 import axios from 'axios'
 import DoctorForm from './DoctorForm';
-import "../Button_Animation.css"
+import "../../styles/Button_Animation.css"
 
 const Doctor = () => {
   const map = useRef(null);

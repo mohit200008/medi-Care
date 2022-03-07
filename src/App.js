@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './components/NavBar/Navbar';
 import './App.css';
 import Home from './components/Home/Homepage.jsx';
 import HomeHi from './components/Home/Homepagehi'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ContactUs from './components/Health/Health';
 import Chatbot from './components/Chatbot/Chatbot';
 import DiseaesPred from './components/DiseasePred/DiseaseDetection';

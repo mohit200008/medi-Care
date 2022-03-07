@@ -1,10 +1,9 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import styled from "styled-components";
 
-import image1 from './SliderImages/slider1.png';
-import image2 from './SliderImages/slider2.png';
-import image3 from './SliderImages/slider3.png';
+import image1 from '../../assets/home/slider1.png';
+import image2 from '../../assets/home/slider2.png';
+import image3 from '../../assets/home/slider3.png';
 
 export default function HomePageSlider() {
     return (

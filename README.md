@@ -30,18 +30,18 @@ MediCare is a one stop location to discuss about different medical milestones, A
 
 ## 🎖️ Screenshots 🎖️
 Home page
-![home eng](./src/assets/img/img2.jpeg)
+![home eng](./images/img2.jpeg)
 Disease Prediction
-![disease pred](./src/assets/img/img1.jpeg)
+![disease pred](./images/img1.jpeg)
 Smart BMI Calculator
-![calculate bmi](./src/assets/img/img3.jpeg)
-![bmi result](./src/assets/img/img5.jpeg)
+![calculate bmi](./images/img3.jpeg)
+![bmi result](./images/img5.jpeg)
 Search for doctor
-![select doctor](./src/assets/img/img4.jpeg)
+![select doctor](./images/img4.jpeg)
 Doctor booking
-![booking detail](./src/assets/img/img6.jpeg)
+![booking detail](./images/img6.jpeg)
 Smart Chatbot
-![chatbot](./src/assets/img/img7.jpeg)
+![chatbot](./images/img7.jpeg)
 
 
 # 🏥 Dataset used 🏥
