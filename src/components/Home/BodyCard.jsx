@@ -13,10 +13,10 @@ const Container = styled.div`
     height: 70%;
     opacity: 0.8;
     display: block;
-    margin-top:5%;
+    margin-top: 5%;
     border-radius: 2rem;
     border: 5px solid #444444;
-    
+    cursor: pointer;
   }
   .text {
     width: 100%;
@@ -28,12 +28,12 @@ const Container = styled.div`
     h1 {
       font-size: 2rem;
       font-weight: bold;
-      text-align:center;
+      text-align: center;
     }
-    p{
+    p {
       font-size: 1.3rem;
       font-family: "Open Sans", sans-serif;
-      text-align:left;
+      text-align: left;
     }
   }
   @media (max-width: 768px) {
@@ -57,22 +57,58 @@ const Container = styled.div`
   }
 `;
 
-function BodyCard({ img, heading, para, id }) {
+function BodyCard({ img, heading, para, id, top }) {
   return (
-    <Container>
-      <img
-        src={img}
-        alt="womenwithlaptop"
-        style={{ order: id % 2 === 0 ? 2 : 0 }}
-        width="10000px"
-        height="150px"
-      />
-      <div className="text">
-        <h1>{heading}</h1>
-        <p>{para}</p>
-      </div>
-    </Container>
+    <>
+      {top ? (
+        // Allign image at left
+        <>
+          <div className="col-md-10 col-lg-10 col-10 contentwrap mt-4">
+            <h1 className="text-center">{heading}</h1>
+            <div className="row">
+              <div className="col-md-6 col-lg-6 col-12 imgwrap">
+                <img src={img} alt="card image" className="img-fluid" />
+              </div>
+              <div className="col-md-6 col-lg-6 col-12 flexer">
+                <p>{para}</p>
+              </div>
+            </div>
+          </div>
+        </>
+      ) : (
+        // Align image at right
+        <>
+          <div className="col-md-10 col-lg-10 col-10 contentwrap mt-4">
+            <h1 className="text-center">{heading}</h1>
+            <div className="row">
+              <div className="col-md-6 col-lg-6 col-12 flexer">
+                <p>{para}</p>
+              </div>
+              <div className="col-md-6 col-lg-6 col-12 imgwrap">
+                <img src={img} alt="card image" className="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </>
+      )}
+    </>
   );
 }
 
 export default BodyCard;
+
+{
+  /* <Container>
+<img
+  src={img}
+  alt="womenwithlaptop"
+  style={{ order: id % 2 === 0 ? 2 : 0 }}
+  width="10000px"
+  height="150px"
+/>
+<div className="text">
+  <h1>{heading}</h1>
+  <p>{para}</p>
+</div>
+</Container> */
+}

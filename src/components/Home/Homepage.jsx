@@ -10,11 +10,23 @@ const Container = styled.div``;
 
 function HomePage() {
   return (
-    <Container>
-      {/* <HomePageHeader /> */}
-      <HomePageSlider />
-      <HomePageBody />
-    </Container>
+    // <Container>
+    //   {/* <HomePageHeader /> */}
+    //   <HomePageSlider />
+    //   <HomePageBody />
+    // </Container>
+    <>
+    <div >
+        <div className="row">
+          <HomePageSlider />
+        </div>
+      
+
+        <div className="row center">
+          <HomePageBody />
+        </div>
+        </div>
+    </>
   );
 }
 
