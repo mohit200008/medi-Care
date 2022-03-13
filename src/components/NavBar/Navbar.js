@@ -9,8 +9,8 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () =>{ 
    
-    
-    setClick(false)
+    // toggling the previous state
+    setClick((prevState)=>!prevState);
    
 };
     
@@ -59,7 +59,8 @@ function Navbar() {
           </li>
           <li className='nav-item'>
            
-            <Link to="/hi" className='nav-links ' id='change-language' onClick={  closeMobileMenu } 
+            
+            <Link to={click?"/hi":"/"} className='nav-links ' id='change-language' onClick={  closeMobileMenu } 
 
             //button rubberband animation
             onMouseDown ={ e =>e.currentTarget.classList.add("btn-animation")}
