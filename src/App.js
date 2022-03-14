@@ -3,12 +3,13 @@ import Navbar from './components/NavBar/Navbar';
 import './App.css';
 import Home from './components/Home/Homepage.jsx';
 import HomeHi from './components/Home/Homepagehi'
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route,Switch } from 'react-router-dom';
 import ContactUs from './components/Health/Health';
 import Chatbot from './components/Chatbot/Chatbot';
 import DiseaesPred from './components/DiseasePred/DiseaseDetection';
 import Doctor from './components/Doctor/Doctor';
 import Details from './components/Doctor/Details';
+import NotfoundPage from "./components/NotfoundPage"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CSSTransition } from 'react-transition-group';
 
@@ -28,6 +29,9 @@ function App() {
     <Router>
     <Chatbot />
       <Navbar />
+
+      <Switch>
+
 
         {
             routes.map(route=>
@@ -56,6 +60,9 @@ function App() {
                 })
         }
 
+        <Route >
+          <NotfoundPage/> 
+        </Route>
 
 
       {/* <Switch>
@@ -104,7 +111,7 @@ function App() {
         </Route>
       </Switch> */}
 
-
+      </Switch> 
     </Router>
   );
 }
