@@ -189,10 +189,14 @@ function FunFact() {
 }
 
 function Chatbot() {
+<<<<<<< HEAD:frontend/src/components/pages/Chatbot/Chatbot.js
   const [opened, setOpened] = useState(false);
   const [key, setKey] = useState(Math.random());
   const navigate = useNavigate();
 
+=======
+  const history = useHistory();
+>>>>>>> 0759c27b994cbdb37ce003aec6157bb6cb4e2213:src/components/Chatbot/Chatbot.js
   const handleEnd = ({ steps, values }) => {
     switch (values[values.length - 1]) {
       case "home":

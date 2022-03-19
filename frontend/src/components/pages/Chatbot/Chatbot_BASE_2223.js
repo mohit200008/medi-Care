@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./Chatbot.css";
+import "../../styles/Chatbot.css";
 import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import funfacts from "./Funfacts";
 
 const theme = {
@@ -191,32 +191,38 @@ function FunFact() {
 function Chatbot() {
   const [opened, setOpened] = useState(false);
   const [key, setKey] = useState(Math.random());
-  const navigate = useNavigate();
+  const history = useHistory();
 
   const handleEnd = ({ steps, values }) => {
     switch (values[values.length - 1]) {
       case "home":
-        navigate("/");
+        history.push("/");
         break;
       case "Disease Detection":
-        navigate("/DiseaesPred");
+        history.push("/DiseaesPred");
         break;
       case "health":
-        navigate("/health");
+        history.push("/health");
       case "Doctor":
-        navigate("/Doctor");
+        history.push("/Doctor");
         break;
       default:
         break;
     }
+    setTimeout(() => {
+      setKey(Math.random());
+      setOpened(false);
+    }, 1000);
   };
 
   return (
     <div className="chatbot">
       <ThemeProvider theme={theme}>
         <ChatBot
+          key={key}
           steps={steps}
           handleEnd={handleEnd}
+          opened={opened}
           headerTitle="Chatbot"
           botAvatar={"https://e7.pngegg.com/pngimages/811/700/png-clipart-chatbot-internet-bot-business-natural-language-processing-facebook-messenger-business-people-logo-thumbnail.png"}
           avatarStyle={{ borderRadius: "100%" }}

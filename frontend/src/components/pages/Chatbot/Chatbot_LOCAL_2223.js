@@ -209,14 +209,20 @@ function Chatbot() {
       default:
         break;
     }
+    setTimeout(() => {
+      setKey(Math.random());
+      setOpened(false);
+    }, 1000);
   };
 
   return (
     <div className="chatbot">
       <ThemeProvider theme={theme}>
         <ChatBot
+          key={key}
           steps={steps}
           handleEnd={handleEnd}
+          opened={opened}
           headerTitle="Chatbot"
           botAvatar={"https://e7.pngegg.com/pngimages/811/700/png-clipart-chatbot-internet-bot-business-natural-language-processing-facebook-messenger-business-people-logo-thumbnail.png"}
           avatarStyle={{ borderRadius: "100%" }}
