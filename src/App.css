@@ -3,6 +3,26 @@
   margin: 0;
   padding: 0;
   font-family: "PT Sans", sans-serif;
+  /* overflow-x: hidden; */
+}
+
+.page{
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(158, 158, 158);
+}
+::-webkit-scrollbar-thumb{
+  background: #CC5500;
+  border-radius: 15px;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #b14b03;
 }
 
 .page-enter {
