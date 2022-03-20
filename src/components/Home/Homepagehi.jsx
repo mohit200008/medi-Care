@@ -9,10 +9,18 @@ const Container = styled.div``;
 
 function HomePage() {
 	return (
-		<Container>
-			<HomePageSliderHi />
-			<HomePageBodyHi />
-		</Container>
+		<>
+		<div >
+        <div className="row">
+          <HomePageSliderHi />
+        </div>
+      
+
+        <div className="row center">
+          <HomePageBodyHi />
+        </div>
+      </div>
+		</>
 	);
 }
 
