@@ -1,10 +1,11 @@
+import img1 from "../../assets/images/BreastCancer.jpg"
 import img2 from "../../assets/images/Diabetiesimg.jpg";
 import img3 from "../../assets/images/heartimg.jpg";
 import img4 from "../../assets/images/kidneyimg.png";
 
 const Data = [
   {
-    img: "images/BreastCancer.jfif",
+    img: img1,
     title: "Breast cancer Disease Prediction",
     subtitle: "Detect breast cancer",
     para: "Symptoms of breast cancer include a lump in the breast, bloody discharge from the nipple and changes in the shape or texture of the nipple or breast.",

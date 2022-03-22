@@ -25,7 +25,75 @@
   background-color: #b14b03;
 }
 
+.page-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
 
+/* play page enter animation */
+.page-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* play page exit animation */
+.page-exit-active {
+  opacity: 0;
+  transform: scale(1.1);
+  transition: opacity 500ms, transform 500ms;
+}
+
+/* css for home page components */
+
+/* main-container css */
+.contentwrap {
+  padding: 1.9rem;
+  margin: 0.8rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.contentwrap:hover .imgwrap img {
+  background-color: aqua;
+}
+
+/* Content wrapping text */
+.flexer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+/* content wrappig image */
+.imgwrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgwrap img {
+  width: 28rem;
+  height: 22rem;
+  padding: 0.3rem;
+  border-radius: 0.8rem;
+  border: 2px solid black;
+  transition: all 3s;
+  background-color: gray;
+}
+
+/* to justify-content at center */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 /* .home {
   background-position: center;

@@ -2,6 +2,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+<<<<<<< HEAD:frontend/src/components/App.css
+  font-family: 'PT Sans', sans-serif;
+=======
   font-family: "PT Sans", sans-serif;
   /* overflow-x: hidden; */
 }
@@ -23,6 +26,7 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: #b14b03;
+>>>>>>> 0829194ea1e2afc1acf2826ab19f0090ad8d7398:src/App.css
 }
 
 

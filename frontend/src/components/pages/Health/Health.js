@@ -3,6 +3,8 @@ import "./Health.css";
 import TextField from "@material-ui/core/TextField";
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
+import "../../styles/Button_Animation.css"
+import fitness from '../../../../static/images/fitness.jpg'
 
 function Health() {
 
@@ -108,7 +110,11 @@ function Health() {
               </div>
             </div>
             <div className="bmi__imgContainer">
+<<<<<<< HEAD:frontend/src/components/pages/Health/Health.js
               <img src={"../../../../static/images/fitness.jpg"} />
+=======
+              <img src={fitness} alt="bmi image" />
+>>>>>>> 0829194ea1e2afc1acf2826ab19f0090ad8d7398:src/components/Health/Health.js
             </div>
           </div>
         ) : (
