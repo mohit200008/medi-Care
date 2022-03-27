@@ -41,6 +41,8 @@ python manage.py migrate
 ```
 python manage.py runserver
 ```
+8. Now check http://localhost:8000/api/doctors
+
 ---
 
 ## API Documentation
