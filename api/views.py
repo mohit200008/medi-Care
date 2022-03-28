@@ -67,9 +67,9 @@ class KidneyPredictionView(APIView):
                 loaded_model = joblib.load(open(file_path, "rb"))
             result = loaded_model.predict(to_predict)
             if int(result)==1:
-                prediction = "Sorry you have high chances of getting a heart disease. Please consult a doctor immediately"
+                prediction = "Sorry you have high chances of getting a Kidney disease. Please consult a doctor immediately"
             else:
-                prediction = "No need to fear. You have no dangerous symptoms for getting a heart disease"
+                prediction = "No need to fear. You have no dangerous symptoms for getting a Kidney disease"
             return Response({"prediction":prediction,"report":report},status=status.HTTP_200_OK)
         return Response({"Error":"Not enough values to predict!"})
 
