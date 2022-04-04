@@ -104,8 +104,9 @@
   .navbar .showlinks {
     display: flex;
     margin-right: 10vw;
-    padding: 15px;
-    background-color: black;
+    padding: 5px;
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0);
   }
   .navbar .navbar-logo {
     size: 3rem;
@@ -128,6 +129,11 @@
     align-items: center;
     flex-direction: column;
     font-size: medium;
+  }
+
+  .showlinks:hover{
+    transform:rotate(90deg);
+    transition: all smooth 1000ms;
   }
   
   
