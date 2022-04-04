@@ -1,19 +1,18 @@
 .navbar {
-    background: linear-gradient(
-90deg,#1c1b1ba3,#1a171780);
-    height: 80px;
-    position: fixed !important;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    z-index: 9999;
+  background: linear-gradient(90deg, #1c1b1ba3, #1a171780);
+  height: 80px;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  z-index: 9999;
 }
 
 .navbar-logo {
-  color: #EEEEEE;
+  color: #eeeeee;
   justify-self: start;
   margin-left: 10px;
   cursor: pointer;
@@ -22,15 +21,15 @@
   font-weight: 700;
 }
 
-.navbar-logo:hover{
+.navbar-logo:hover {
   text-decoration: none;
   transition: all 0.2s ease-out;
-  background: #00D4DB;
-background: -webkit-linear-gradient(to right, #00D4DB 34%, #72ADCF 81%);
-background: -moz-linear-gradient(to right, #00D4DB 34%, #72ADCF 81%);
-background: linear-gradient(to right, #00D4DB 34%, #72ADCF 81%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  background: #00d4db;
+  background: -webkit-linear-gradient(to right, #00d4db 34%, #72adcf 81%);
+  background: -moz-linear-gradient(to right, #00d4db 34%, #72adcf 81%);
+  background: linear-gradient(to right, #00d4db 34%, #72adcf 81%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .fa-firstdraft {
   margin-left: 0.5rem;
@@ -45,8 +44,14 @@ background: linear-gradient(to right, #00D4DB 34%, #72ADCF 81%);
   text-align: center;
   width: 70vw;
   justify-content: end;
-  margin-right: 2rem;
-  
+  margin-right: 10rem;
+  font-size: medium;
+}
+
+
+
+.navbar .showlinks {
+  display: none;
 }
 
 .nav-item {
@@ -81,7 +86,7 @@ background: linear-gradient(to right, #00D4DB 34%, #72ADCF 81%);
   display: none;
 }
 
-#change-language{
+#change-language {
   background-color: #a3eef1;
   border-radius: 12px;
   font-weight: 700;
@@ -95,7 +100,42 @@ background: linear-gradient(to right, #00D4DB 34%, #72ADCF 81%);
   background-image: linear-gradient(to right, #25aae1, #3f86ed);
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 800px) {
+  .navbar .showlinks {
+    display: flex;
+    margin-right: 10vw;
+    padding: 15px;
+    background-color: black;
+  }
+  .navbar .navbar-logo {
+    size: 3rem;
+    margin-left: 80px;
+  }
+  .nav-menu {
+    display: none;
+    
+  }
+  
+  .navbar .hidden{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    width: 100%;
+    height: 250px;
+    padding-bottom: 10px;
+    align-items: center;
+    flex-direction: column;
+    font-size: medium;
+  }
+  
+  
+  
+
+}
+
+/* @media screen and (max-width: 960px) {
   .NavbarItems {
     position: relative;
   }
@@ -157,7 +197,7 @@ background: linear-gradient(to right, #00D4DB 34%, #72ADCF 81%);
   }
 
   .nav-links-mobile {
-    display: block;
+    display: flex;
     text-align: center;
     padding: 1.5rem;
     margin: 2rem auto;
@@ -178,4 +218,4 @@ background: linear-gradient(to right, #00D4DB 34%, #72ADCF 81%);
   button {
     display: none;
   }
-}
+} */
