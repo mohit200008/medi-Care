@@ -55,7 +55,7 @@ Smart Chatbot
 
 
 # Remote backend URL
-medicare-backend.herokuapp.com/
+(https://medicare-backend.herokuapp.com/)
 
 
 ## 🤔 Prerequisites 🤔
