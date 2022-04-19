@@ -53,11 +53,6 @@ Smart Chatbot
 
 4) [Breast Cancer](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data): Winconsin Breast Cancer Dataset
 
-
-# Remote backend URL
-(https://medicare-backend.herokuapp.com/)
-
-
 ## 🤔 Prerequisites 🤔
 Required to install and run the software:
 
