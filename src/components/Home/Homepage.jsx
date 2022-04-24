@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import News from "./News/News";
 
 // components
 import HomePageBody from "./HomePageBody";
@@ -21,8 +22,8 @@ function HomePage() {
           <HomePageSlider />
         </div>
       
-
         <div className="row center">
+        <div><News /></div>
           <HomePageBody />
         </div>
         </div>

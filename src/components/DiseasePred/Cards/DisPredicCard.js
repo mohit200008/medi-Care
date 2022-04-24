@@ -2,7 +2,7 @@ import React from "react";
 const DPCard = ({ img, title, subtitle, para, url }) => {
   return (
     <>
-      <div className="col-md-5 col-lg-5 col-10 center pwrap mt-4">
+      <div className="col-md-5 col-lg-5 col-10 center mt-4">
         <img src={img} alt="Image" className="img-fluid pimg" />
         <div className="text-wrapper">
           <h5 className="text-center">{title}</h5>
