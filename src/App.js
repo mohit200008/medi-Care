@@ -1,62 +1,54 @@
-import React from 'react';
-import Navbar from './components/NavBar/Navbar';
-import './App.css';
-import Home from './components/Home/Homepage.jsx';
-import HomeHi from './components/Home/Homepagehi'
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import ContactUs from './components/Health/Health';
-import Chatbot from './components/Chatbot/Chatbot';
-import DiseaesPred from './components/DiseasePred/DiseaseDetection';
-import Doctor from './components/Doctor/Doctor';
-import Details from './components/Doctor/Details';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { CSSTransition } from 'react-transition-group';
+import React from "react";
+import Navbar from "./components/NavBar/Navbar";
+import "./App.css";
+import Home from "./components/Home/Homepage.jsx";
+import HomeHi from "./components/Home/Homepagehi";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import ContactUs from "./components/Health/Health";
+import Chatbot from "./components/Chatbot/Chatbot";
+import DiseaesPred from "./components/DiseasePred/DiseaseDetection";
+import Doctor from "./components/Doctor/Doctor";
+import Details from "./components/Doctor/Details";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { CSSTransition } from "react-transition-group";
 
 function App() {
-
-    //all the routes
-    const routes = [
-        { path: '/',  Component: Home },
-        { path: '/DiseaesPred',  Component: DiseaesPred },
-        { path: '/hi',Component: HomeHi },
-        { path: '/Doctor',  Component: Doctor },
-        { path: '/Details',  Component: Details },
-        { path: '/health',  Component: ContactUs }
-      ]
+  //all the routes
+  const routes = [
+    { path: "/", Component: Home },
+    { path: "/DiseaesPred", Component: DiseaesPred },
+    { path: "/hi", Component: HomeHi },
+    { path: "/Doctor", Component: Doctor },
+    { path: "/Details", Component: Details },
+    { path: "/health", Component: ContactUs },
+  ];
 
   return (
     <Router>
-    <Chatbot />
+      <Chatbot />
       <Navbar />
 
-        {
-            routes.map(route=>
-                {
-                    const {path,Component} = route;
+      {routes.map((route) => {
+        const { path, Component } = route;
 
-                    return <Route key={path} path ={path} exact >
-                        {
-                            ({ match }) => (
-                                //component to make page transiiton on routing
-                                <CSSTransition
-                                    in={match!=null}
-                                    timeout={500}
-                                    unmountOnExit
-                                    classNames="page"
-                                >
-                                    <div className="page">
-                                        <Component />
-                                    </div>
-                                </CSSTransition>
-                            )
-                        }
-            
-
-                    </Route> 
-                })
-        }
-
-
+        return (
+          <Route key={path} path={path} exact>
+            {({ match }) => (
+              //component to make page transiiton on routing
+              <CSSTransition
+                in={match != null}
+                timeout={500}
+                unmountOnExit
+                classNames="page"
+              >
+                <div className="page">
+                  <Component />
+                </div>
+              </CSSTransition>
+            )}
+          </Route>
+        );
+      })}
 
       {/* <Switch>
         <Route path='/' exact  >
@@ -103,8 +95,6 @@ function App() {
             <ContactUs/>
         </Route>
       </Switch> */}
-
-
     </Router>
   );
 }
