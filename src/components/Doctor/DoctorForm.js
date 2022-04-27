@@ -39,11 +39,13 @@ export default function DoctorForm() {
                                         type="text"
                                         variant="outlined"
                                         required
+                                        name="name"
                                     />
                                     <TextField
                                         label="Doctor's Age"
                                         type="number"
                                         variant="outlined"
+                                        name="age"
                                     />
                                     <InputLabel id="specialization">Area of specialization</InputLabel>
                                     <Select
@@ -52,16 +54,18 @@ export default function DoctorForm() {
                                         value={specilization}
                                         label="Specilization"
                                         onChange={handelSpecilization}
+                                        name="specialization"
                                     >
-                                        <MenuItem value={'Dermatologist'}>Dermatologist</MenuItem>
-                                        <MenuItem value={'Psychiatrist'}>Psychiatrist</MenuItem>
-                                        <MenuItem value={'Neurologist'}>Neurologist</MenuItem>
-                                        <MenuItem value={'Physician'}>Physician</MenuItem>
+                                        <MenuItem value={'dermatologist'}>Dermatologist</MenuItem>
+                                        <MenuItem value={'psychiatrist'}>Psychiatrist</MenuItem>
+                                        <MenuItem value={'neurologist'}>Neurologist</MenuItem>
+                                        <MenuItem value={'physician'}>Physician</MenuItem>
                                     </Select>
                                     <TextField
                                         label="Year OF Experience"
                                         type="number"
                                         variant="outlined"
+                                        name="experience"
                                     />
                                     <TextField
                                         label="Doctors's Review"
@@ -69,18 +73,21 @@ export default function DoctorForm() {
                                         variant="outlined"
                                         multiline
                                         required
+                                        name="review"
                                     />
                                     <TextField
                                         label="Phone number"
                                         type="number"
                                         variant="outlined"
                                         required
+                                        name="phone"
                                     />
                                     <TextField
                                         label=" Address of the doctor"
                                         type="text"
                                         variant="outlined"
                                         multiline
+                                        name="address"
                                     />
                                     <Button 
                                     

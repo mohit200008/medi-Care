@@ -35,31 +35,31 @@ const steps = [
   },
   {
     id: "veryHappy",
-    message: "Great Me too 😍",
+    message: "Great Me too.",
     trigger: "help",
   },
   {
     id: "happy",
     message:
-      "Hmm, Looks Like You are in good mood. Well I can make it great 😊",
+      "Hmm, Looks Like You are in good mood. Well I can make it great.",
     trigger: "help",
   },
   {
     id: "normal",
     message:
-      "Ooh, Are You Confused Sir ? Don't Worry I am here to Assist You 👻",
+      "Ooh, Are You Confused Sir ? Don't Worry I am here to Assist You.",
     trigger: "help",
   },
   {
     id: "sad",
     message:
-      "I am sorry to here that 😟 . Well i would suggest to read our random Fun-fact or Visit our Yoga Services or Read the latest feeds. You will feel better.🙂",
+      "I am sorry to here that. Well i would suggest to read our random Fun-fact or Visit our Yoga Services or Read the latest feeds. You will feel better.",
     trigger: "help",
   },
   {
     id: "angry",
     message:
-      "😐 Oops, Did i do something wrong....But wait i am a bot i can't do that..🤥.  Well i suggest you to relax your mind, play some games,  watch some movies  and eat a lot of healthy tasty food just like me..😝",
+      "Oops, Did i do something wrong....But wait i am a bot i can't do that...  Well i suggest you to relax your mind, play some games,  watch some movies  and eat a lot of healthy tasty food just like me..",
     trigger: "help",
   },
   {
@@ -127,6 +127,12 @@ const steps = [
   {
     id: "BMIHeight",
     user: true,
+    validator: (value) => {
+        if (isNaN(value)) {
+          return 'value should be a number';
+        }
+        return true;
+      },
     trigger: "BMIWeightMessage",
   },
   {
@@ -137,6 +143,12 @@ const steps = [
   {
     id: "BMIWeight",
     user: true,
+    validator: (value) => {
+        if (isNaN(value)) {
+          return 'value should be a number';
+        }
+        return true;
+      },
     trigger: "BMIResult",
   },
   {
@@ -189,10 +201,7 @@ function FunFact() {
 }
 
 function Chatbot() {
-  const [opened, setOpened] = useState(false);
-  const [key, setKey] = useState(Math.random());
   const history = useHistory();
-
   const handleEnd = ({ steps, values }) => {
     switch (values[values.length - 1]) {
       case "home":
@@ -209,21 +218,16 @@ function Chatbot() {
       default:
         break;
     }
-    setTimeout(() => {
-      setKey(Math.random());
-      setOpened(false);
-    }, 1000);
   };
 
   return (
     <div className="chatbot">
       <ThemeProvider theme={theme}>
         <ChatBot
-          key={key}
           steps={steps}
           handleEnd={handleEnd}
-          opened={opened}
           headerTitle="Chatbot"
+          speechSynthesis={{ enable: true, lang: 'en' }}
           botAvatar={"https://e7.pngegg.com/pngimages/811/700/png-clipart-chatbot-internet-bot-business-natural-language-processing-facebook-messenger-business-people-logo-thumbnail.png"}
           avatarStyle={{ borderRadius: "100%" }}
           floating={true}

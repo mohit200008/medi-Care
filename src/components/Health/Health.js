@@ -4,6 +4,7 @@ import TextField from "@material-ui/core/TextField";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
 import "../../styles/Button_Animation.css"
+import fitness from '../../assets/images/fitness.jpg'
 
 function Health() {
 
@@ -114,7 +115,7 @@ function Health() {
               </div>
             </div>
             <div className="bmi__imgContainer">
-              <img src={"/images/fitness.jpg"} />
+              <img src={fitness} alt="bmi image" />
             </div>
           </div>
         ) : (
