@@ -1,0 +1,35 @@
+.search-container{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  input#search-bar{
+    margin: 0 auto;
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    border: 1px solid #7e7e7e;
+    outline: none;
+    border-radius: 15px;
+   }
+  .search-icon{
+    position: relative;
+    float: right;
+    width: 105px;
+    height: 65px;
+    top: -56px;
+  }
+
+.news-div {
+  max-width: 24%;
+  margin: 5px;
+}
+
+.img {
+  width: 100%;
+}
+.ss {
+  font-size: 13px;
+}
