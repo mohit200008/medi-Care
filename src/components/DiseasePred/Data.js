@@ -23,14 +23,14 @@ const Data = [
     title: "Heart disease",
     subtitle: "Predict Heart Disease<",
     para: "It develops when the arteries that supply blood to the heart become clogged with plaque. This causes them to harden and narrow.",
-    url: "https://heartdiseasepredictionweb.herokuapp.com/",
+    url: "/heart-predict",
   },
   {
     img: img4,
     title: "Kidney disease",
     subtitle: "Predict kidney disease",
     para: "The kidneys filter waste and excess fluid from the blood. As kidneys fail, waste builds up.",
-    url: "https://kidneydiseasepredictionweb.herokuapp.com/",
+    url: "/kidney-predict",
   },
 ];
 export default Data;

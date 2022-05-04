@@ -5,26 +5,6 @@
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
-@font-face {
-  font-family: Montserrat-Regular;
-  src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
-}
-
-@font-face {
-  font-family: Montserrat-Bold;
-  src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
-}
-
-@font-face {
-  font-family: Montserrat-ExtraBold;
-  src: url('../fonts/montserrat/Montserrat-ExtraBold.ttf'); 
-}
-
-@font-face {
-  font-family: Montserrat-Medium;
-  src: url('../fonts/montserrat/Montserrat-Medium.ttf'); 
-}
-
 
 
 /*//////////////////////////////////////////////////////////////////
@@ -313,12 +293,7 @@ textarea.input1 + .shadow-input1 {
   -o-transform: translateX(10px);
   transform: translateX(10px);
 }
-.select-section{
-  height: 50px;
-  border-radius: 25px;
-  padding: 0 30px;
-  border-color:white;
-}
+
 
 
 
