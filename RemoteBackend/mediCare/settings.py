@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-gpz1qpo*&v@p5f*1^14t%rj9%a1_5(#y4h1$4=tyax_2!294u7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['medicare-backend.herokuapp.com']
+ALLOWED_HOSTS = ['medicare-backend.herokuapp.com',"localhost", "127.0.0.1"]
 
 
 # Application definition
@@ -51,6 +51,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = False
 
 ROOT_URLCONF = 'mediCare.urls'
 
