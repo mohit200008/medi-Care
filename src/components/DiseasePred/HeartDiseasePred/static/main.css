@@ -118,6 +118,7 @@ iframe {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: large;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;

@@ -1,13 +1,10 @@
 import React,{useState} from "react";
-import './main.css';
-import $ from 'jquery';
-//import './vendor/tilt/tilt.jquery.min.js';
+import './static/main.css';
 import { useHistory } from "react-router-dom";
+import kidney from './static/kidney.jpg';
+import '../../../styles/w3.css';
 
 export default function KidneyDiseaseForm(props) {
-    /*$('.js-tilt').tilt({
-        scale: 1.1
-    });*/
 	const history = useHistory();
     const [bp,setBp] = useState(0);
     const [sg,setSg] = useState(0);
@@ -31,7 +28,7 @@ export default function KidneyDiseaseForm(props) {
         body : JSON.stringify([bp,sg,al,su,rbc,pc,pcc]),
     };
     const handlePredict = () =>{
-        fetch('/api/kidney-pred/',requestOptions)
+        fetch('https://medicare-backend.herokuapp.com/kidney-pred/',requestOptions)
             .then((response) => response.json())
             .then((data) => createReport(data));
     };
@@ -47,7 +44,7 @@ export default function KidneyDiseaseForm(props) {
 				names:props.name
 			}),
 		};
-		fetch('/api/map-report/',requestOptions)
+		fetch('https://medicare-backend.herokuapp.com/map-report/',requestOptions)
 			.then((response) => response.json())
 			.then((data) => history.push('/report/'+'kidney',{state:data}));
 	};
@@ -55,7 +52,7 @@ export default function KidneyDiseaseForm(props) {
         <div className="contact1">
 		<div className="container-contact1">
 			<div className="contact1-pic js-tilt" data-tilt>
-				<img src="./vendor/kidney.jpg" alt="IMG" />
+				<img src={kidney} alt="IMG" />
 			</div>
 			<form className="contact1-form">
 				<span className="contact1-form-title">
@@ -103,8 +100,8 @@ export default function KidneyDiseaseForm(props) {
     );
 };
 KidneyDiseaseForm.defaultProps = {
-	defaultval:['90/60mmHg - 120/80mmHg','1.010 - 1.020',
-        '3.4 - 5.4 g/dL','100 - 125 mg/dL','4.7 - 6.1 mcL','NA','NA'],
+	defaultval:['90/60mmHg - 120/80 mmHg','1.010 - 1.020',
+        '3.4 - 5.4 g/dL','100 - 125 mg/dL','4.7 - 6.1 mcL',' up to 5 in males and may be up to 10 in females','0-5'],
 	name:['Blood Pressure','Specific Gravity','Albumin',
         'Blood Sugar Level','Red Blood Cells Count',
         'Pus Cell Count','Pus Cell Clumps']

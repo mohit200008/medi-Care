@@ -1,15 +1,11 @@
 import React,{useState} from "react";
-import './main.css';
-import './HeartDiseaseForm.css';
-import $ from 'jquery';
-//import './vendor/tilt/tilt.jquery.min.js';
+import './static/main.css';
+import './static/HeartDiseaseForm.css';
 import { useHistory } from "react-router-dom";
-import heart from './vendor/heart.jpg';
+import heart from './static/heart.jpg';
+import '../../../styles/w3.css';
 
 export default function HeartDiseaseForm(props) {
-    /*$('.js-tilt').tilt({
-        scale: 1.1
-    });*/
 	const history = useHistory();
     const [cp,setCp] = useState(0);
     const [trestbps,setTrestbps] = useState(0);
@@ -28,18 +24,20 @@ export default function HeartDiseaseForm(props) {
     const handleExang = e =>{setExang(e.target.value);};
     const requestOptions = {
         method : "POST",
+		mode: 'no-cors',
         headers : { "Authorization" : "authtoken",
                     "Content-Type" : "application/json" },
         body : JSON.stringify([cp,trestbps,chol,fbs,restecg,thalach,exang]),
     };
     const handlePredict = () =>{
-        fetch('/api/heart-pred/',requestOptions)
+        fetch('https://medicare-backend.herokuapp.com/heart-pred/',requestOptions)
             .then((response) => response.json())
             .then((data) => createReport(data));
     };
 	const createReport = (vals) =>{
 		const requestOptions = {
 			method : "POST",
+			mode: 'no-cors',
 			headers : { "Authorization" : "authtoken",
 						"Content-Type" : "application/json" },
 			body : JSON.stringify({
@@ -49,7 +47,7 @@ export default function HeartDiseaseForm(props) {
 				names:props.name
 			}),
 		};
-		fetch('/api/map-report/',requestOptions)
+		fetch('https://medicare-backend.herokuapp.com/map-report/',requestOptions)
 			.then((response) => response.json())
 			.then((data) => history.push('/report/'+'heart',{state:data}));
 	};
@@ -64,11 +62,11 @@ export default function HeartDiseaseForm(props) {
 				<img src={heart} />
 			</div>
 			<form className="contact1-form">
-				<span className="contact1-form-title">
+				<span className="w3-xlarge contact1-form-title">
 					Take Heart Disease Test
 				</span>
 				<div className="wrap-input1">
-					<select className="form-control select input1" id="cp" name="cp" required="required" onChange={handleCp} placeholder="Chest Pain Type">
+					<select className="form-control w3-large select input1" id="cp" name="cp" required="required" onChange={handleCp} placeholder="Chest Pain Type">
 						<option hidden>Chest Pain Type</option>
 						<option value="1">Typical Angina</option>
 						<option value="2">Atypical Angina</option>
@@ -78,15 +76,15 @@ export default function HeartDiseaseForm(props) {
 					<span className="shadow-input1"></span>
 				</div>
 				<div className="wrap-input1" >
-					<input className="form-control input1" type="number" name="trestbps" onChange={handleTrestbps} required="required" placeholder="Resting Blood Sugar" />
+					<input className="form-control w3-large input1" type="number" name="trestbps" onChange={handleTrestbps} required="required" placeholder="Resting Blood Sugar" />
 					<span className="shadow-input1"></span>
 				</div>
 				<div className="wrap-input1">
-					<input className="form-control input1" type="number" name="chol" step="any" onChange={handleChol} required="required" placeholder="Serum Cholestrol in mg/dl" />
+					<input className="form-control w3-large input1" type="number" name="chol" step="any" onChange={handleChol} required="required" placeholder="Serum Cholestrol in mg/dl" />
 					<span className="shadow-input1"></span>
 				</div>
 				<div className="wrap-input1">
-					<select className="form-control select input1" id="fbs" name="fbs" onChange={handleFbs} required="required" placeholder="Fasting Blood Sugar">
+					<select className="form-control w3-large select input1" id="fbs" name="fbs" onChange={handleFbs} required="required" placeholder="Fasting Blood Sugar">
 						<option hidden>Fasting Blood Sugar</option>
 						<option value="0">Fasting Blood Sugar &lt; 120 mg/dl</option>
 						<option value="1">Fasting Blood Sugar &gt; 120 mg/dl</option>
@@ -94,7 +92,7 @@ export default function HeartDiseaseForm(props) {
 					<span className="shadow-input1"></span>
 				</div>
 				<div className="wrap-input1">
-					<select className="form-control select input1" id="restecg" name="restecg" onChange={handleRestecg} required="required" placeholder="Resting Electro-Cardiographic Result">
+					<select className="form-control w3-large select input1" id="restecg" name="restecg" onChange={handleRestecg} required="required" placeholder="Resting Electro-Cardiographic Result">
 						<option hidden>Resting Electro-Cardiographic Result</option>
 						<option value="0">Normal</option>
 						<option value="1">Having ST-T Wave Abnormality</option>
@@ -103,11 +101,11 @@ export default function HeartDiseaseForm(props) {
 					<span className="shadow-input1"></span>
 				</div>
 				<div className="wrap-input1"> 
-					<input className="form-control input1" type="number" name="thalach" onChange={handleThalach} required="required" placeholder="Maximum Heart Rate Achieved" />
+					<input className="form-control w3-large input1" type="number" name="thalach" onChange={handleThalach} required="required" placeholder="Maximum Heart Rate Achieved" />
 					<span className="shadow-input1"></span>
 				</div>
 					<div className="wrap-input1">
-						<select className="form-control select input1" id="exang" name="exang" onChange={handleExang} required="required" placeholder="Exercise Induced Angina">
+						<select className="form-control w3-large select input1" id="exang" name="exang" onChange={handleExang} required="required" placeholder="Exercise Induced Angina">
 							<option hidden>Exercise Induced Angina</option>
 							<option value="1">Yes</option>
 							<option value="0">No</option>
@@ -128,7 +126,7 @@ export default function HeartDiseaseForm(props) {
     );
 };
 HeartDiseaseForm.defaultProps = {
-	defaultval:['NA','100 - 125 mg/dL','125 - 200mg/dL','NA','NA','NA','NA'],
+	defaultval:['No Chest Pain','100 - 125 mg/dL','125 - 200 mg/dL','80 - 100 mg/dL','Value 1','0 to 90 %','less than 0.5 ng/ml'],
 	name:['Chest Pain Type','Resting Blood Sugar','Serum Cholestrol',
 		'Fasting Blood Sugar','Resting Electro-Cardiographic Result',
 		'Maximum Heart Rate Achieved','Exercise Induced Angina']
