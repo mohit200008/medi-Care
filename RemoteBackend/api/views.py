@@ -53,6 +53,7 @@ class HeartPredictionView(APIView):
 class KidneyPredictionView(APIView):
     def post(self,request,format=None):
         to_predict_list = request.data
+        print("here")
         to_predict_list = list(map(float, to_predict_list))
         report = to_predict_list
         if len(to_predict_list)==7 :
