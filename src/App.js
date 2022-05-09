@@ -9,9 +9,12 @@ import Chatbot from './components/Chatbot/Chatbot';
 import DiseaesPred from './components/DiseasePred/DiseaseDetection';
 import Doctor from './components/Doctor/Doctor';
 import Details from './components/Doctor/Details';
-import NotfoundPage from "./components/NotfoundPage"
+import NotfoundPage from "./components/NotfoundPage";
+import HeartDiseaseForm from "./components/DiseasePred/HeartDiseasePred/HeartDiseaseForm";
+import KidneyDiseaseForm from "./components/DiseasePred/KidneyDiseasePred/KidneyDiseaseForm";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CSSTransition } from 'react-transition-group';
+import DiseaseReport from './components/DiseasePred/DiseaseReport';
 
 function App() {
 
@@ -22,7 +25,10 @@ function App() {
     { path: '/hi', Component: HomeHi },
     { path: '/Doctor', Component: Doctor },
     { path: '/Details', Component: Details },
-    { path: '/health', Component: ContactUs }
+    { path: '/health', Component: ContactUs },
+    { path: '/heart-predict', Component: HeartDiseaseForm },
+    { path: '/kidney-predict', Component: KidneyDiseaseForm },
+    { path: '/report/:type', Component: DiseaseReport },
   ]
 
   const [mode, setMode] = useState('light');

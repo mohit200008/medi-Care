@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const DPCard = ({ img, title, subtitle, para, url }) => {
   return (
     <>
@@ -10,14 +11,14 @@ const DPCard = ({ img, title, subtitle, para, url }) => {
           <p>{para}</p>
         </div>
 
-        <a
-          href={url}
+        <Link
+          to={url}
           target="blank"
           className="pbtn link text-center"
           style={{ textDecoration: "none" }}
         >
           Predict
-        </a>
+        </Link>
       </div>
     </>
   );
