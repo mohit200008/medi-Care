@@ -11,14 +11,14 @@ const DPCard = ({ img, title, subtitle, para, url }) => {
           <p>{para}</p>
         </div>
 
-        <Link
-          to={url}
+        <a
+          href={url}
           target="blank"
           className="pbtn link text-center"
           style={{ textDecoration: "none" }}
         >
           Predict
-        </Link>
+        </a>
       </div>
     </>
   );
