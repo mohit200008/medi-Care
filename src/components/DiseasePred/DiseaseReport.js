@@ -2,6 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import '../../styles/w3.css';
 import './DiseaseReport.css';
+import './index.css';
 
 export default function DiseaseReport() {
     const {state} = useLocation();

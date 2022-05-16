@@ -24,20 +24,18 @@ export default function HeartDiseaseForm(props) {
     const handleExang = e =>{setExang(e.target.value);};
     const requestOptions = {
         method : "POST",
-		mode: 'no-cors',
         headers : { "Authorization" : "authtoken",
                     "Content-Type" : "application/json" },
         body : JSON.stringify([cp,trestbps,chol,fbs,restecg,thalach,exang]),
     };
     const handlePredict = () =>{
-        fetch('https://medicare-backend.herokuapp.com/heart-pred/',requestOptions)
+        fetch('https://medi-care-backend.herokuapp.com/heart-pred/',requestOptions)
             .then((response) => response.json())
             .then((data) => createReport(data));
     };
 	const createReport = (vals) =>{
 		const requestOptions = {
 			method : "POST",
-			mode: 'no-cors',
 			headers : { "Authorization" : "authtoken",
 						"Content-Type" : "application/json" },
 			body : JSON.stringify({
@@ -47,7 +45,7 @@ export default function HeartDiseaseForm(props) {
 				names:props.name
 			}),
 		};
-		fetch('https://medicare-backend.herokuapp.com/map-report/',requestOptions)
+		fetch('https://medi-care-backend.herokuapp.com/map-report/',requestOptions)
 			.then((response) => response.json())
 			.then((data) => history.push('/report/'+'heart',{state:data}));
 	};
