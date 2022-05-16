@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-gpz1qpo*&v@p5f*1^14t%rj9%a1_5(#y4h1$4=tyax_2!294u7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['medicare-backend.herokuapp.com',"localhost:3000", "127.0.0.1"]
+ALLOWED_HOSTS = ['medi-care-backend.herokuapp.com',"localhost:3000", "127.0.0.1"]
 
 
 # Application definition

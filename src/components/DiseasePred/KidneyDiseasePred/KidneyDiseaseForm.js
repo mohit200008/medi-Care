@@ -28,7 +28,7 @@ export default function KidneyDiseaseForm(props) {
         body : JSON.stringify([bp,sg,al,su,rbc,pc,pcc]),
     };
     const handlePredict = () =>{
-        fetch('https://medicare-backend.herokuapp.com/kidney-pred/',requestOptions)
+        fetch('https://medi-care-backend.herokuapp.com/kidney-pred/',requestOptions)
             .then((response) => response.json())
             .then((data) => createReport(data));
     };
@@ -44,7 +44,7 @@ export default function KidneyDiseaseForm(props) {
 				names:props.name
 			}),
 		};
-		fetch('https://medicare-backend.herokuapp.com/map-report/',requestOptions)
+		fetch('https://medi-care-backend.herokuapp.com/map-report/',requestOptions)
 			.then((response) => response.json())
 			.then((data) => history.push('/report/'+'kidney',{state:data}));
 	};
