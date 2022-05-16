@@ -3,7 +3,7 @@ import "../../../styles/News.css";
 import "../../../styles/w3.css";
 
 export default function News() {
-    const API_KEY = "4ffda4cb8a734e5193d06762fdc76dd5";
+    const API_KEY = "acae411d28db4d8b98724b12c2e7c417";
     const [query, setQuery] = useState();
     const [articles, setArticles] = useState([]);
     const [strt,setStrt] = useState(0);
