@@ -1,4 +1,4 @@
-# ⚕️ MediCare ⚕️
+# MediCare
 
 <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge" alt="PRs Welcome" /> <a href="https://github.com/mohit200008/medi-Care/pulls" target="_blank"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/mohit200008/medi-Care?style=for-the-badge" /></a> <a href="https://github.com/mohit200008/medi-Care/issues" target="_blank"><img alt="GitHub issues" src="https://img.shields.io/github/issues/mohit200008/medi-Care?style=for-the-badge" /></a> <a href="https://github.com/mohit200008/medi-Care/blob/master/README.md#contributors-" target="_blank"></a>
 
@@ -6,20 +6,51 @@ With the rise of people getting affected with Covid-19, we were looking into the
 
 Hence, we came up with the idea of providing the people all over the world a web application that will not only connect the those in need with the correct medical care/supervision but also enable them to understand the implications of different diseases in a very intuitive way.
 
-## 👩‍⚕️ What it does 👩‍⚕️
+## Table of Contents
+
+- [⚕️ MediCare ⚕️](#medicare)
+  - [👩‍⚕️ What it does 👩‍⚕️](#what-it-does)
+  - [💡 Demo 💡](#demo)
+  - [💪🏻 How we built it 💪🏻](#how-we-built-it)
+  - [🎖️ Accomplishments that we're proud of 🎖️](#accomplishments-that-were-proud-of)
+  - [🎖️ Screenshots 🎖️](#screenshots)
+    - [Home page](#home-page)
+    - [Disease Prediction](#disease-prediction)
+    - [Smart BMI Calculator](#smart-bmi-calculator)
+    - [Search for doctor](#search-for-doctor)
+    - [Doctor booking](#doctor-booking)
+    - [Smart Chatbot](#smart-chatbot)
+- [🏥 Dataset used 🏥](#dataset-used)
+- [Remote backend URL](#remote-backend-url)
+  - [🤔 Prerequisites 🤔](#prerequisites)
+  - [💣 Installing and Running 💣](#installing-and-running)
+- [🧑‍💻 How to Contribute 🧑‍💻](#how-to-contribute)
+  - [⭐  HOW TO MAKE A PULL REQUEST :](#how-to-make-a-pull-request)
+    - [Alternatively, Git CLI way to Sync forked repository with origin repository](#alternatively-git-cli-way-to-sync-forked-repository-with-origin-repository)
+    - [Github Docs for Syncing](#github-docs-for-syncing)
+  - [Contributors](#contributors)
+    - [The Wonderful People Who Contributed Here](#the-wonderful-people-who-contributed-here)
+  - [All the best 🥇](#all-the-best)
+    - [Keep smiling 😄](#keep-smiling)
+    - [Happy coding 🥳](#happy-coding)
+## What it does
+
 MediCare is a one stop location to discuss about different medical milestones, AI Disease prediction system, locate nearby hospitals to get proper medical care, and finally a translator to get the whole web app in the language one is comfortable with and hence dissolve any communication barrier. This solution with shorten the gap between the people around the world in search for good healthcare and pave a path in the journey of recovery.
 
-## 💡 Demo 💡
+## Demo
+
 ➡️ The live demo can be checkout from [here](https://medi-care-phi.vercel.app/)
 
 ➡️ The demo video of the project can be used [here](https://www.youtube.com/watch?v=C-avaGP2-M8&ab_channel=MohitLamba)
 
-## 💪🏻 How we built it 💪🏻
+## How we built it
+
 - For frontend we have used React Js.
 - For Disease prediction we have used django.
 - For styling we have used CSS and Bootstrap.
 
-## 🎖️ Accomplishments that we're proud of 🎖️
+## Accomplishments that we're proud of
+
 - Available in multiple languages
 - Smart AI Disease Detection
 - Easy to use Calorie Calculator
@@ -28,23 +59,35 @@ MediCare is a one stop location to discuss about different medical milestones, A
 - Consume less time and work effectively
 - Custom Scroll bar
 
-## 🎖️ Screenshots 🎖️
-Home page
+## Screenshots
+
+### Home page
+
 ![home eng](./images/img2.jpeg)
-Disease Prediction
+
+### Disease Prediction
+
 ![disease pred](./images/img1.jpeg)
-Smart BMI Calculator
+
+### Smart BMI Calculator
+
 ![calculate bmi](./images/img3.jpeg)
 ![bmi result](./images/img5.jpeg)
-Search for doctor
+
+### Search for doctor
+
 ![select doctor](./images/img4.jpeg)
-Doctor booking
+
+### Doctor booking
+
 ![booking detail](./images/img6.jpeg)
-Smart Chatbot
+
+### Smart Chatbot
+
 ![chatbot](./images/img7.jpeg)
 
+# Dataset used
 
-# 🏥 Dataset used 🏥
 1) [Diabetes](https://www.kaggle.com/uciml/pima-indians-diabetes-database): Pima Indian Diabetes Dataset
 
 2) [Heart](https://www.kaggle.com/ronitf/heart-disease-uci): Heart Disease Dataset
@@ -53,30 +96,29 @@ Smart Chatbot
 
 4) [Breast Cancer](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data): Winconsin Breast Cancer Dataset
 
-
 # Remote backend URL
-(https://medicare-backend.herokuapp.com/)
 
+(<https://medicare-backend.herokuapp.com/>)
 
-## 🤔 Prerequisites 🤔
+## Prerequisites
+
 Required to install and run the software:
 
- * [npm](https://www.npmjs.com/get-npm)
+- [npm](https://www.npmjs.com/get-npm)
 
-
-## 💣 Installing and Running 💣
+## Installing and Running
 
 From the project folder, run these commands in console (terminal) to install dependencies and run the app:
+
 ```
 npm install
 ```
+
 ```
 npm run start
 ```
 
-## 🧑‍💻 How to contribute? 🧑‍💻
-
-# 💥 How to Contribute
+# How to Contribute
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/mohit200008/medi-Care/pulls)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
@@ -86,7 +128,7 @@ npm run start
 - Create a **[Pull Request](https://github.com/mohit200008/medi-Care/compare)** (_PR_), which will be promptly reviewed and given suggestions for improvements by the community.
 - Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes that are included in your commits.
 
-## ⭐ HOW TO MAKE A PULL REQUEST:
+## HOW TO MAKE A PULL REQUEST
 
 **1.** Start by making a fork the [**medi-Care**](https://github.com/mohit200008/medi-Care) repository. Click on the <a href="https://github.com/mohit200008/FoodSaver20008/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a> symbol at the top right corner.
 
@@ -103,6 +145,7 @@ git remote add upstream https://github.com/mohit200008/medi-Care.git
 ```
 
 **4.** Check the remotes for this repository.
+
 ```
 git remote -v
 ```
@@ -124,7 +167,7 @@ git checkout -b <YourBranchName>
 - In your forked repository click on "Fetch upstream"
 - Click "Fetch and merge".
 
-### Alternatively, Git CLI way to Sync forked repository with origin repository:
+### Alternatively, Git CLI way to Sync forked repository with origin repository
 
 ```bash
 git fetch upstream
@@ -158,20 +201,21 @@ git push origin <YourBranchName>
 
 **12.** **Congratulations!** You've made your first contribution! 🙌🏼
 
-## Contributors:
+## Contributors
+
 ### The Wonderful People Who Contributed Here
+
 <table>
-	<tr>
-		<td>
-			<a href="https://github.com/mohit200008/medi-Care/graphs/contributors">
-  				<img src="https://contrib.rocks/image?repo=mohit200008/medi-Care" />
-			</a>
-		</td>
-	</tr>
+ <tr>
+  <td>
+   <a href="https://github.com/mohit200008/medi-Care/graphs/contributors">
+      <img src="https://contrib.rocks/image?repo=mohit200008/medi-Care" />
+   </a>
+  </td>
+ </tr>
 </table>
 
-
-## All the best! 🥇
+## All the best
 
 <p align="center">
 
@@ -179,6 +223,6 @@ git push origin <YourBranchName>
 
 </p>
 
+### Keep smiling
 
- ### Keep smiling 😄
- ### Happy coding 🥳
+### Happy coding
