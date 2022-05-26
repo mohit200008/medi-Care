@@ -65,6 +65,10 @@
 	height: 50px;
 	font-size: 15px;
 }
+
+.verification {
+	font-size: 15px;
+}
 .closeBtn {
 	background: black;
 	font-size: 20px;

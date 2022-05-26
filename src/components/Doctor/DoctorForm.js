@@ -10,6 +10,7 @@ export default function DoctorForm() {
 		setformCheck(!formCheck);
 	};
 	const [specilization, setSpecilization] = React.useState('');
+	const [file, setFile] = useState([]);
 	const [name, setName] = React.useState('');
 	const [age, setAge] = React.useState('');
 	const [experience, setExperience] = React.useState('');
@@ -28,6 +29,7 @@ export default function DoctorForm() {
 		phonenumber: phonenumber,
 		address: address,
 		specilization: specilization,
+		file: file,
 	};
 	const handleSubmit = () => {
 		console.log(data);
@@ -140,6 +142,20 @@ export default function DoctorForm() {
 								required
 								onChange={(e) => setaddress(e.target.value)}
 							/>
+							<label
+								for='myfile'
+								className='verification'
+								required
+							>
+								Verification proof of your degree :
+							</label>
+							<input
+								type='file'
+								id='myfile'
+								name='myfile'
+								onChange={(e) => setFile(e.target.files[0])}
+								required
+							></input>
 							<Button
 								onMouseDown={(e) =>
 									e.currentTarget.classList.add(
