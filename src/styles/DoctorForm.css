@@ -1,80 +1,89 @@
 .blur {
-    position: absolute;
-    top: 100px;
-    z-index: 21;
-    left: 0;
-    width: 100vw;
-    height: 100%;
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+	position: absolute;
+	top: 100px;
+	z-index: 21;
+	left: 0;
+	width: 100vw;
+	height: 100%;
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
 }
 .doctorFormContainer {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%,0%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 10px;
-    z-index: 20;
-    animation: add 0.5s ease-in-out;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 10px;
+	z-index: 20;
+	animation: add 0.5s ease-in-out;
 }
 .doctorForm {
-    background: #ffffff;
-    display: flex;
-    border-radius: 10px;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.555);
+	background: #ffffff;
+	display: flex;
+	border-radius: 10px;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px;
+	box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.555);
 }
 .doctorForm h1 {
-    font-size: 50px;
-    text-transform: uppercase;
-    font-weight: 400;
-    padding-bottom: 20px;
+	font-size: 50px;
+	text-transform: uppercase;
+	font-weight: 400;
+	padding-bottom: 20px;
 }
-.fromElement{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    align-items: center;
-    min-width: 400px;
+.fromElement {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: #ffffff;
+	align-items: center;
+	min-width: 400px;
 }
 .fromElement .MuiInputBase-root {
-    margin-bottom: 10px;
-    min-width: 400px;
+	margin-bottom: 10px;
+	min-width: 400px;
 }
 .fromElement .MuiButton-root {
-    background-color: #47b8a9 !important;
-    color: #ffffff !important;
-    width: 400px !important;
-    margin-top: 10px;
+	background-color: #47b8a9 !important;
+	color: #ffffff !important;
+	width: 400px !important;
+	margin-top: 10px;
 }
 .addDocBtn {
-    position: absolute;
-    top: 100px;
-    left: 48%;
+	position: absolute;
+	top: 100px;
+	left: 40%;
+	background-color: #47b8a9 !important;
+	color: #ffffff !important;
+	width: 300px;
+	height: 50px;
+	font-size: 15px;
+}
+
+.verification {
+	font-size: 15px;
 }
 .closeBtn {
-    background: black;
-    font-size: 20px;
-    position: absolute;
-    font-weight: 700;
-    top: 16px;
-    right: 18px;
-    border-radius: 10px;
+	background: black;
+	font-size: 20px;
+	position: absolute;
+	font-weight: 700;
+	top: 16px;
+	right: 18px;
+	border-radius: 10px;
 }
 
 @keyframes add {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
