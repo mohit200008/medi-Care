@@ -3,27 +3,27 @@
   height: 80px;
   position: fixed !important;
   top: 0;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 5rem;
   z-index: 9999;
 }
 
 .navbar-logo {
   color: #eeeeee;
   justify-self: start;
-  margin-left: 10px;
+  margin-left: 1rem;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  /* font-size: 1rem; */
   font-weight: 700;
 }
 
 .navbar-logo:hover {
   text-decoration: none;
-  transition: all 0.2s ease-out;
+  transition: all .2s ease-out;
   background: #00d4db;
   background: -webkit-linear-gradient(to right, #00d4db 34%, #72adcf 81%);
   background: -moz-linear-gradient(to right, #00d4db 34%, #72adcf 81%);
@@ -45,7 +45,7 @@
   width: 70vw;
   justify-content: end;
   margin-right: 10rem;
-  font-size: medium;
+  /* font-size: medium; */
 }
 
 

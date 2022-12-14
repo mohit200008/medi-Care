@@ -32,7 +32,7 @@
     "react-dropzone": "^11.2.4",
     "react-router-dom": "^5.2.0",
     "react-s3-uploader": "^5.0.0",
-    "react-scripts": "^5.0.0",
+    "react-scripts": "^5.0.1",
     "react-simple-chatbot": "^0.5.0",
     "react-transition-group": "^4.4.2",
     "restuta-react-dropzone-s3-uploader": "^0.20.4",
