@@ -53,7 +53,7 @@ const Doctor = () => {
       <DoctorForm />
       <div className="info">
         <div className="card">
-          <div className="card-image"></div>
+          <div className="card-image"><img src={require('../../assets/doctor/lady doctor.jpg')} alt=''/></div>
           <div className="card-text">
             <h2>Dr. Kiran Dev</h2>
             <p>Physician</p>
@@ -81,7 +81,7 @@ const Doctor = () => {
           </div>
         </div>
         <div className="card">
-          <div className="card-image card2"></div>
+          <div className="card-image card2"><img src={require('../../assets/doctor/doctor2.jpg')} alt=''/></div>
           <div className="card-text card2">
             <h2>Dr. Rahul Kumar</h2>
             <p>Dermatologist</p>
@@ -109,7 +109,7 @@ const Doctor = () => {
           </div>
         </div>
         <div className="card">
-          <div className="card-image card3"></div>
+          <div className="card-image card3"><img src={require('../../assets/doctor/lady doctor3.jpg')} alt=''/></div>
           <div className="card-text card3">
             <h2>Dr. Emily Sharma</h2>
             <p>Psychiatrist, Neurologist</p>
