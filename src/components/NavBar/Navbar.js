@@ -25,6 +25,9 @@ const [showLinks , setShowLinks] = useState(false);
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
         MediCare
         </Link>
+        <Link to='/covid' className='navbar-logo' onClick={closeMobileMenu}>
+        Covid-19 Updates
+        </Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
