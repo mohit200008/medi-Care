@@ -96,6 +96,9 @@ MediCare is a one stop location to discuss about different medical milestones, A
 
 4) [Breast Cancer](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data): Winconsin Breast Cancer Dataset
 
+5)[Data Set Used for Corona Chart](https://data.covid19india.org/data.json):
+statewise data set is used
+
 # Remote backend URL
 
 (<https://medicare-backend.herokuapp.com/>)

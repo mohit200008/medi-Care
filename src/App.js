@@ -15,6 +15,7 @@ import KidneyDiseaseForm from "./components/DiseasePred/KidneyDiseasePred/Kidney
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CSSTransition } from 'react-transition-group';
 import DiseaseReport from './components/DiseasePred/DiseaseReport';
+import Chart from './components/chart/Chart';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
     { path: '/heart-predict', Component: HeartDiseaseForm },
     { path: '/kidney-predict', Component: KidneyDiseaseForm },
     { path: '/report/:type', Component: DiseaseReport },
+    {path:'/covid',Component:Chart},
   ]
 
   const [mode, setMode] = useState('light');
