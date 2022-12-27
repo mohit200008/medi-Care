@@ -16,6 +16,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { CSSTransition } from 'react-transition-group';
 import DiseaseReport from './components/DiseasePred/DiseaseReport';
 import Chart from './components/chart/Chart';
+import Footer from './components/Footer/Footer.jsx';
 
 function App() {
 
@@ -151,6 +152,7 @@ function App() {
       </Switch> */}
 
       </Switch>
+      <Footer/>
     </Router>
   );
 }
