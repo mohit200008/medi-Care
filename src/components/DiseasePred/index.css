@@ -124,3 +124,29 @@ table {
 	margin: auto;
 }
 
+
+.pbtn{
+	height: 3vw;
+	width: 10vw;
+
+}
+
+.para,.title,.sub-title{
+	font-size: 1.5vw;
+	margin-bottom: 1vw;
+}
+.title{
+	margin-top: 1vw;
+}
+.title:hover{
+	color:deepskyblue;
+}
+
+.sub-title:hover{
+	color: rgb(211, 24, 24);
+}
+
+.pimg{
+	height: 15vw;
+	width: 20vw;
+}
