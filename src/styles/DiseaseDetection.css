@@ -21,6 +21,34 @@ body {
     color: rgb(40, 22, 141);
 }
 
+.outer{
+  background-color: aliceblue;
+  border-radius: 10px;
+  width: 80%;
+  height:100%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+.pimg{
+  margin: 10px;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.grids{
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
 .blog-card {
     display: flex;
     flex-direction: column;

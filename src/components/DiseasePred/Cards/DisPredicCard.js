@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../../styles/DiseaseDetection.css";
 const DPCard = ({ img, title, subtitle, para, url }) => {
   return (
     <>
-      <div className="col-md-5 col-lg-5 col-10 center mt-4">
+      <div className="outer">
         <img src={img} alt="Image" className="img-fluid pimg" />
         <div className="text-wrapper">
           <h5 className="text-center">{title}</h5>
