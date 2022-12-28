@@ -1,0 +1,101 @@
+.avi-footer-main {
+    /* background-color: #e4e5e5; */
+    padding-top: 6rem !important;
+    padding-left: 5rem !important;
+    padding-right: 2rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.avi-footer-container {
+    padding: 2rem 2rem;
+}
+
+.avi-footer-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+.avi-footer {
+    color: rgb(59, 57, 57);
+}
+
+.avi-footer-text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.avi-footer-about {
+    padding-left: 3rem;
+    
+}
+
+.avi-footer-about h4 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.about-text a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #767171;
+    /* font-weight: 600; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.avi-contactus a:hover{
+    color: #393737;
+    font-size: 1.6rem;
+}
+
+.avi-footer-socialmedia h4 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hsr-footer-social-media {
+    display: flex;
+}
+
+.form-control {
+    height: 6vh;
+    width: 10vw !important;
+}
+
+.submit-button {
+    background: var(--color-main);
+    font-weight: 500;
+    outline: none;
+}
+
+.about-text a:hover {
+    color: #393737;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.avi-footer-socialmedia a {
+    color:#767171;
+}
+.avi-footer-socialmedia a:hover{
+    color: #393737;
+}
+.avi-copyright-sec p{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+.avi-copyright-sec p a{
+    font-size: 1.8rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    text-decoration: none;
+    color:#767171;
+    font-weight: bolder;
+}
+.avi-contact-link{
+    text-decoration: none;
+    color: #615e5e;
+}
+.avi-copyright-sec p a:hover{
+    color: #393737;
+}

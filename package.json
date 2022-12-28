@@ -25,6 +25,7 @@
     "firebase": "^8.2.1",
     "jquery": "^3.6.0",
     "mapbox-gl": "^2.6.1",
+    "node-module": "^2.0.0",
     "notistack": "^1.0.3",
     "react": "^16.13.1",
     "react-bootstrap": "^2.0.3",
