@@ -13,19 +13,20 @@ function DiseaseDetection() {
       <div className="header">Disease Prediction</div>
       <br></br>
       <br></br>
-      <div className="row d-flex justify-content-center">
+      <div className="grid-container">
         {
           Data.map((e,i)=>{
-            return <DPCard
+            return (
+              <div className="grids">
+              <DPCard
               img={e.img}
               title={e.title}
               subtitle={e.subtitle}
               para={e.para}
               url={e.url}
               key={i*Math.random()}
-
-
             />
+            </div>)
           })
         }
       </div>
