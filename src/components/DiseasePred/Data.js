@@ -1,7 +1,7 @@
-import img1 from "../../assets/images/BreastCancer.jpg"
-import img2 from "../../assets/images/Diabetiesimg.jpg";
-import img3 from "../../assets/images/heartimg.jpg";
-import img4 from "../../assets/images/kidneyimg.png";
+import img1 from "../../assets/images/breastcancerNew.jpg"
+import img2 from "../../assets/images/diabetesNew.jpg";
+import img3 from "../../assets/images/HeartNew.jpg";
+import img4 from "../../assets/images/kidneyNew.jpg";
 
 const Data = [
   {
