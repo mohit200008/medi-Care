@@ -22,10 +22,10 @@ const [showLinks , setShowLinks] = useState(false);
   return (
     <>
       <nav className='navbar'>
-        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+        <Link to='/' className='navbar-logo1' onClick={closeMobileMenu}>
         MediCare
         </Link>
-        <Link to='/covid' className='navbar-logo' onClick={closeMobileMenu}>
+        <Link to='/covid' className='navbar-logo2' onClick={closeMobileMenu}>
         Covid-19 Updates
         </Link>
         <div className='menu-icon' onClick={handleClick}>
@@ -35,14 +35,14 @@ const [showLinks , setShowLinks] = useState(false);
 
         <ul className={showLinks ? 'hidden' : 'nav-menu'}>
           <li className='nav-item'>
-            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+            <Link to='/' className='nav-links1' onClick={closeMobileMenu}>
               Home
             </Link>
           </li>
           <li className='nav-item'>
             <Link
               to='/DiseaesPred'
-              className='nav-links'
+              className='nav-links2'
               onClick={closeMobileMenu}
             >
               Disease Prediction
@@ -51,7 +51,7 @@ const [showLinks , setShowLinks] = useState(false);
           <li className='nav-item'>
             <Link
               to='/health'
-              className='nav-links'
+              className='nav-links3'
               onClick={closeMobileMenu}
             >
               Health
@@ -60,7 +60,7 @@ const [showLinks , setShowLinks] = useState(false);
           <li className='nav-item'>
             <Link
               to='/Doctor'
-              className='nav-links'
+              className='nav-links4'
               onClick={closeMobileMenu}
             >
               Doctor
@@ -69,7 +69,7 @@ const [showLinks , setShowLinks] = useState(false);
           <li className='nav-item'>
            
             
-            <Link to={click?"/hi":"/"} className='nav-links ' id='change-language' onClick={  closeMobileMenu } 
+            <Link to={click?"/hi":"/"} className='nav-links5 ' id='change-language' onClick={  closeMobileMenu } 
 
             //button rubberband animation
             onMouseDown ={ e =>e.currentTarget.classList.add("btn-animation")}
