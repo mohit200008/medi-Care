@@ -1,5 +1,9 @@
 # MediCare
 
+<p align='center'>
+<img src="https://i.postimg.cc/d3vyWw0L/Medicare-Logo.png" width="350" title="hover text">
+</p>
+
 <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge" alt="PRs Welcome" /> <a href="https://github.com/mohit200008/medi-Care/pulls" target="_blank"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/mohit200008/medi-Care?style=for-the-badge" /></a> <a href="https://github.com/mohit200008/medi-Care/issues" target="_blank"><img alt="GitHub issues" src="https://img.shields.io/github/issues/mohit200008/medi-Care?style=for-the-badge" /></a> <a href="https://github.com/mohit200008/medi-Care/blob/master/README.md#contributors-" target="_blank"></a>
 
 With the rise of people getting affected with Covid-19, we were looking into the data on the level of healthcare people all around India was receiving, one of the things we found that people in rural areas are clueless about the symptoms of the disease. They also lack proper medical supervision/care.
