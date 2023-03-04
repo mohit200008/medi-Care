@@ -45,7 +45,7 @@ const [showLinks , setShowLinks] = useState(false);
               className='nav-links2'
               onClick={closeMobileMenu}
             >
-              Disease Prediction
+            Disease Prediction
             </Link>
           </li>
           <li className='nav-item'>
@@ -54,7 +54,7 @@ const [showLinks , setShowLinks] = useState(false);
               className='nav-links3'
               onClick={closeMobileMenu}
             >
-              Health
+          Health
             </Link>
           </li>
           <li className='nav-item'>
