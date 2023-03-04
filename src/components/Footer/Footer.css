@@ -1,5 +1,6 @@
 .avi-footer-main {
     /* background-color: #e4e5e5; */
+    background-color: wheat;
     padding-top: 6rem !important;
     padding-left: 5rem !important;
     padding-right: 2rem !important;
@@ -22,6 +23,7 @@
 
 .avi-footer-text {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
 }
 
 .avi-footer-about {
@@ -65,13 +67,14 @@
     font-weight: 500;
     outline: none;
 }
-
+.about-text a{
+    color: black;
+}
 .about-text a:hover {
     color: #393737;
     font-weight: bold;
     font-size: 1.6rem;
 }
-
 .avi-footer-socialmedia a {
     color:#767171;
 }
@@ -79,6 +82,7 @@
     color: #393737;
 }
 .avi-copyright-sec p{
+    background-color: wheat;
     display: flex;
     margin-top: 2rem;
     justify-content: center;
@@ -89,12 +93,12 @@
     padding-left: 0.3rem;
     padding-right: 0.3rem;
     text-decoration: none;
-    color:#767171;
+    color:black;
     font-weight: bolder;
 }
 .avi-contact-link{
     text-decoration: none;
-    color: #615e5e;
+    color: black;
 }
 .avi-copyright-sec p a:hover{
     color: #393737;

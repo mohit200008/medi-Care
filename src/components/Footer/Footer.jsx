@@ -41,10 +41,10 @@ const Footer = () => {
             <hr />
             <div className="avi-copyright-sec">
                 <p>
-                    @2022 Copyright by
+                    @2023 Copyright by
                     <a href="#">Medicare</a>
-                    <p>By Mohit Lamba</p>
-                    All Rights Reserved.
+                    <p class="color">By Mohit Lamba ❤️</p>
+                    All Rights Reserved
                 </p>
             </div>
         </div>
