@@ -6,6 +6,20 @@
     padding-bottom: 1rem !important;
 }
 
+@keyframes slide-in {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .show-footer {
+    animation: slide-in 0.5s ease both;
+    transition: none;
+  }
+  
 .avi-footer-container {
     padding: 2rem 2rem;
 }
