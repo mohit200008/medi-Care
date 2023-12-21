@@ -15,7 +15,7 @@
 .inner-container{
     width: 55%;
     float: right;
-    background-color: #f1f1f1;
+    background-color:var(--background);
     padding: 80px;
 }
 
@@ -29,7 +29,7 @@
 
 .text{
     font-size: 18px;
-    color: #545454;
+    color: var(--pera);
     line-height: 30px;
     text-align: justify;
     margin-bottom: 40px;
@@ -73,7 +73,7 @@
     max-width: 33.33%;
     padding: 10px;
     text-align: center;
-    color: rgb(27, 25, 25);
+    color: var(--pera);
     font-family:"Times New Roman"; 
     cursor: pointer;
   }
@@ -83,7 +83,7 @@
     width: 70px;
     height: 70px;
     border: 3px solid #dd8299;
-    color: #41df19;
+    color: var(--green);
     transform: rotate(45deg);
     margin-bottom: 30px;
     margin-top: 16px;
@@ -95,10 +95,10 @@
     margin-top: 16px;
     transform: rotate(-45deg);
     font-size: 30px;
-    color: rgb(12, 15, 12);
+    color: var(--pera);
   }
   .service-box:hover .service-icon{
-    background: #82ccdd;
+    background:var(--body-color-re);
     color: green;
   }
   .service-title{
