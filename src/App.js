@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect} from 'react';
 import Navbar from './components/NavBar/Navbar';
 import './App.css';
 import Home from './components/Home/Homepage.jsx';
@@ -34,7 +34,21 @@ function App() {
     {path:'/covid',Component:Chart},
   ]
 
-  const [mode, setMode] = useState('light');
+  const [mode, setmode] = useState("light");
+  const togglemode =() =>{
+    if (mode === "light"){
+      setmode("dark");
+    }
+    else{
+      setmode("light");
+    }
+  }
+
+  useEffect(() => {
+    // Update the class on the body element when mode changes
+    document.body.classList.toggle('dark-mode', mode === 'dark');
+  }, [mode]);
+
 
   const [alert, setalert] = useState(null);
 
@@ -51,25 +65,10 @@ function App() {
 
   }
 
-  const toggleMode = () => {
-    if (mode === 'light') {
-      setMode('dark');
-      document.body.style.backgroundColor = "#050A30";
-      showalert("Dark mode has been enbled", "primary");
-    }
-    else {
-      setMode('light');
-      document.body.style.backgroundColor = "white";
-      showalert("Light mode has been enbled", "primary");
-
-
-    }
-  }
-
   return (
     <Router>
       <Chatbot />
-      <Navbar mode={mode} toggleMode={toggleMode} />
+      <Navbar togglemode={togglemode} mode={mode} />
 
       <Switch>
 

@@ -17,7 +17,7 @@
 
 
 .avi-footer {
-    color: rgb(59, 57, 57);
+    color:var(--pera);
 }
 
 .avi-footer-text {
@@ -37,12 +37,12 @@
 .about-text a {
     font-size: 1.6rem;
     text-decoration: none;
-    color: #767171;
+    color: var(--pera-mid);
     /* font-weight: 600; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .avi-contactus a:hover{
-    color: #393737;
+    color: var(--pera);
     font-size: 1.6rem;
 }
 
@@ -67,16 +67,16 @@
 }
 
 .about-text a:hover {
-    color: #393737;
+    color: var(--pera);
     font-weight: bold;
     font-size: 1.6rem;
 }
 
 .avi-footer-socialmedia a {
-    color:#767171;
+    color:var(--pera-mid);
 }
 .avi-footer-socialmedia a:hover{
-    color: #393737;
+    color: var(--pera);
 }
 .avi-copyright-sec p{
     display: flex;
@@ -89,13 +89,13 @@
     padding-left: 0.3rem;
     padding-right: 0.3rem;
     text-decoration: none;
-    color:#767171;
+    color:var(--pera-mid);
     font-weight: bolder;
 }
 .avi-contact-link{
     text-decoration: none;
-    color: #615e5e;
+    color: var(--pera-mid);
 }
 .avi-copyright-sec p a:hover{
-    color: #393737;
+    color:var(--pera);
 }

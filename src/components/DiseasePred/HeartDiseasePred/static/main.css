@@ -25,7 +25,7 @@ body, html {
 a {
 	font-size: 14px;
 	line-height: 1.7;
-	color: #666666;
+	color:var(--pera);
 	margin: 0px;
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
@@ -50,7 +50,7 @@ h1,h2,h3,h4,h5,h6 {
 p {
 	font-size: 14px;
 	line-height: 1.7;
-	color: #666666;
+	color:var(--pera);
 	margin: 0px;
 }
 
@@ -126,7 +126,7 @@ iframe {
 
 .container-contact1 {
   width: 1163px;
-  background: #fff;
+  background:var(--background);
   border-radius: 10px;
   overflow: hidden;
 
@@ -162,7 +162,7 @@ iframe {
 .contact1-form-title {
   display: block;
   font-size: 24px;
-  color: #333333;
+  color:var(--pera);
   line-height: 1.2;
   text-align: center;
   padding-bottom: 44px;
@@ -197,10 +197,10 @@ textarea.input1 + .shadow-input1 {
 .input1 {
   display: block;
   width: 100%;
-  background: #e6e6e6;
+  background: var(--pera-re);
   font-size: 15px;
   line-height: 1.5;
-  color: #666666;
+  color:var(--pera);
 }
 
 .shadow-input1 {
@@ -253,7 +253,7 @@ textarea.input1 + .shadow-input1 {
   background: #57b846;
   font-size: 15px;
   line-height: 1.5;
-  color: #fff;
+  color:var(--background);
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -279,7 +279,7 @@ textarea.input1 + .shadow-input1 {
 }
 
 .contact1-form-btn:hover {
-  background: #333333;
+  background:var(--pera);
 }
 
 .contact1-form-btn:hover i {
@@ -293,7 +293,7 @@ textarea.input1 + .shadow-input1 {
   height: 50px;
   border-radius: 25px;
   padding: 0 30px;
-  border-color:white;
+  border-color:var(--background);
 }
 
 
@@ -357,7 +357,7 @@ textarea.input1 + .shadow-input1 {
   content: attr(data-validate);
   position: absolute;
   max-width: 70%;
-  background-color: white;
+  background-color: var(--background);
   border: 1px solid #c80000;
   border-radius: 13px;
   padding: 4px 25px 4px 10px;

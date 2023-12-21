@@ -14,7 +14,7 @@
   grid-template-areas: "image" "text" "stats";
 
   border-radius: 18px;
-  background: white;
+  background: var(--doctor-card-background);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   font-family: roboto;
   text-align: center;
@@ -47,7 +47,7 @@
   font-size: 13px;
 }
 .card-text p {
-  color: grey;
+  color: var( --doctor-card-text);
   font-size: 15px;
   font-weight: 300;
 }
@@ -62,7 +62,7 @@
   grid-template-rows: 1fr;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background: rgb(255, 7, 110);
+  background: var( --doctor-cardstats-background);
 }
 .card-stats .stat {
   padding: 10px;
@@ -70,7 +70,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: white;
+  color: var(--doctor-cardstats-color);
 }
 .card-stats .border {
   border-left: 1px solid rgb(172, 26, 87);
@@ -90,7 +90,7 @@
 }
 .card:hover {
   transform: scale(1.15);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  box-shadow: var(--doctor-card-shadow);
 }
 
 .card-image.card2 {
@@ -104,13 +104,13 @@
   border-right: 1px solid rgb(185, 67, 20);
 }
 .card-stats.card2 {
-  background: rgb(255, 77, 7);
+  background:var( --doctor-cardstats2-background);
 }
 .card-image.card3 {
   background-size: cover;
 }
 .card-text.card3 .date {
-  color: rgb(0, 189, 63);
+  color: var( --doctor-cardstats3-background);
 }
 .card-stats.card3 .border {
   border-left: 1px solid rgb(14, 122, 50);
@@ -123,7 +123,7 @@
 .btn-flip {
   opacity: 1;
   outline: 0;
-  color: #fff;
+  color: var(--background);
   line-height: 40px;
   position: relative;
   text-align: center;
@@ -148,12 +148,12 @@
   left: 0;
   opacity: 0;
   width: 100%;
-  color: #ffffff;
+  color: var(--background);
   display: block;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   position: absolute;
-  background: #06e436;
+  background: var(--green);
   content: attr(data-back);
   -webkit-transform: translateY(-50%) rotateX(90deg);
   transform: translateY(-50%) rotateX(90deg);
@@ -162,14 +162,14 @@
   top: 0;
   left: 0;
   opacity: 1;
-  color: #ffffff;
+  color:var(--background);
   display: block;
   padding: 0 30px;
   line-height: 40px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   position: relative;
-  background: #06e436;
+  background: var(--green);
   content: attr(data-front);
   -webkit-transform: translateY(0) rotateX(0);
   transform: translateY(0) rotateX(0);
@@ -177,7 +177,7 @@
 
 .searchbox {
   font-family: "Times New Roman";
-  background-color: #fffbf8;
+  background-color:var( --doctor-search-background);
   padding: 3px;
   width: 340px;
   margin: 10px auto;
@@ -206,7 +206,7 @@ input[type="search"] {
   border: none;
   color: #939393;
   font-weight: 500;
-  background-color: #fffbf8;
+  background-color:var( --doctor-search-background);
   -webkit-box-shadow: 0 -2px 2px 0 rgba(199, 199, 199, 0.55), 0 1px 1px 0 #fff,
     0 2px 2px 1px #fafafa, 0 2px 4px 0 #b2b2b2 inset, 0 -1px 1px 0 #f2f2f2 inset,
     0 15px 15px 0 rgba(41, 41, 41, 0.09) inset;

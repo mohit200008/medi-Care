@@ -36,16 +36,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #ffffff;
+    background-color:wheat;
     padding: 20px 25px;
     height: 330px;
     max-width: 300px;
     border-radius: 4px;
-    box-shadow: 1px 1px 10px -6px #000;
+    box-shadow: 1px 1px 10px -6px var(--color);
   }
   .bmi__form .MuiButton-root {
-    background-color: #47b8a9 !important;
-    color: #ffffff !important;
+    background-color:var(--body-color-re) !important;
+    color:var(--background) !important;
     width: 100px !important;
     margin-top: 10px;
   }
@@ -60,8 +60,8 @@
     padding: 20px 40px;
   }
   .bmi__resultContainer {
-    background-color: #fff;
-    box-shadow: 1px 1px 10px -5px #000;
+    background-color:var(--background);
+    box-shadow: 1px 1px 10px -5px var(--color);
     padding-bottom: 20px;
   }
   .bmi__resultHeader {
@@ -103,7 +103,7 @@
     place-items: center;
     margin-top: 30px;
     padding-top: 10px;
-    background-color: rgb(244, 251, 253);
+    background-color: var(--background);
   }
   .bmi__waterContainer img {
     width: 100px;
@@ -118,7 +118,7 @@
   }
   
   .bmi__recommendations table {
-    border: 1px solid #32a899;
+    border: 1px solid var(--body-color-re);
     padding: 10px;
   }
   .bmi__recommendations table td {

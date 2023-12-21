@@ -23,15 +23,17 @@
 	animation: add 0.5s ease-in-out;
 }
 .doctorForm {
-	background: #ffffff;
+	background:var( --doctorform-background);
+	
 	display: flex;
 	border-radius: 10px;
 	flex-direction: column;
 	align-items: center;
 	padding: 40px;
-	box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.555);
+	box-shadow: var(--doctorform-shadow);
 }
 .doctorForm h1 {
+	color: var(--doctorform-back);
 	font-size: 50px;
 	text-transform: uppercase;
 	font-weight: 400;
@@ -41,7 +43,7 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	background-color: #ffffff;
+	background-color:white;
 	align-items: center;
 	min-width: 400px;
 }
@@ -51,7 +53,7 @@
 }
 .fromElement .MuiButton-root {
 	background-color: #47b8a9 !important;
-	color: #ffffff !important;
+	color: black !important;
 	width: 400px !important;
 	margin-top: 10px;
 }
@@ -59,8 +61,8 @@
 	position: absolute;
 	top: 100px;
 	left: 40%;
-	background-color: #47b8a9 !important;
-	color: #ffffff !important;
+	background-color:var(--doctorform-back) !important;
+	color:var(--doctorform-background) !important;
 	width: 300px;
 	height: 50px;
 	font-size: 15px;
@@ -70,7 +72,8 @@
 	font-size: 15px;
 }
 .closeBtn {
-	background: black;
+	background: var(--doctorform-back);
+	color: var(--doctorform-background);
 	font-size: 20px;
 	position: absolute;
 	font-weight: 700;

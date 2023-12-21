@@ -1,3 +1,51 @@
+:root {
+ --doctor-card-background:white;
+ --doctor-card-text:grey;
+ --doctor-cardstats-color:white;
+ --doctor-cardstats-background:rgb(255, 7, 110);
+ --doctor-cardstats2-background:rgb(255, 77, 7);
+ --doctor-cardstats3-background:rgb(0, 189, 63);
+ --doctor-search-background: #fffbf8;
+ --doctor-card-shadow:5px 5px 15px rgba(0, 0, 0, 0.6);
+ --doctorform-background: #ffffff;
+ --doctorform-back: #000000;
+ --doctorform-shadow:4px 4px 20px rgba(0, 0, 0, 0.555);
+ --prediction-header:rgb(40, 22, 141);
+ --background:white;
+ --color:black;
+ --pera:rgb(71, 71, 71);
+ --pera-mid:#767171;
+ --pera-re:rgb(184, 184, 184);
+ --body-background:#e4e5e5;
+ --body-color:#3d3f4c;
+ --body-color-re: #6bbba8;
+ --green: #2ecc71;
+}
+
+.dark-mode {
+  --doctor-card-background: black;
+  --doctor-card-text:rgb(200, 197, 197);
+  --doctor-cardstats-color:black;
+  --doctor-cardstats-background:rgb(216, 0, 90);
+  --doctor-cardstats2-background:rgb(209, 59, 0);
+  --doctor-cardstats3-background:rgb(0, 167, 56);
+  --doctor-search-background: #3f3f3f;
+  --doctor-card-shadow:5px 5px 15px rgba(255, 255, 255, 0.6);
+  --doctorform-background: #000000;
+  --doctorform-back: #ffffff;
+  --doctorform-shadow:4px 4px 20px rgba(255, 255, 255, 0.555);
+  --prediction-header:rgb(38, 0, 255);
+  --background:black;
+  --color:white;
+  --pera:rgb(184, 184, 184);
+  --pera-mid:#aca3a3;
+  --pera-re:rgb(71, 71, 71);
+  --body-background:#173838;
+  --body-color:#8d95c5;
+  --body-color-re: #2e584e;
+  --green: #186d3b;
+}
+
 .navbar {
   background: linear-gradient(90deg, #1c1b1ba3, #1a171780);
   height: 80px;
@@ -158,32 +206,32 @@
   font-size: 1.7vw;
   margin-left: 1vw;
   position: absolute;
-  left: 50vw;
+  left: 45vw;
 }
 .nav-links2{
   font-size: 1.7vw;
   margin-left: 1vw;
   position: absolute;
-  left:57vw
+  left:52vw
 }
 .nav-links3{
   font-size: 1.7vw;
   margin-left: 1vw;
   position: absolute;
-  left:72vw
+  left:67vw
 }
 .nav-links4{
   font-size: 1.7vw;
   margin-left: 1vw;
   position: absolute;
-  left:80vw
+  left:75vw
 }
 
 .nav-links5{
   font-size: 1.7vw;
   margin-left: 1vw;
   position: absolute;
-  left:88vw
+  left:83vw
 }
 .navbar-logo1{
   font-size: 2vw;
