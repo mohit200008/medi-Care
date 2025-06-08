@@ -1,5 +1,4 @@
-import { Button, InputLabel, MenuItem, Select } from '@material-ui/core';
-import TextField from '@material-ui/core/TextField';
+import { Button, InputLabel, MenuItem, Select, TextField } from '@mui/material';
 import React, { useState } from 'react';
 import '../../styles/Button_Animation.css';
 import '../../styles/DoctorForm.css';

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../../styles/Chatbot.css";
 import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import funfacts from "./Funfacts";
 
 const theme = {
@@ -201,48 +201,27 @@ function FunFact() {
 }
 
 function Chatbot() {
-  const history = useHistory();
+  const navigate = useNavigate();
+
   const handleEnd = ({ steps, values }) => {
-    switch (values[values.length - 1]) {
-      case "home":
-        history.push("/");
-        break;
-      case "Disease Detection":
-        history.push("/DiseaesPred");
-        break;
-      case "health":
-        history.push("/health");
-      case "Doctor":
-        history.push("/Doctor");
-        break;
-      default:
-        break;
+    if (values.selectedService === "health") {
+      navigate("/health");
+    } else if (values.selectedService === "Disease Detection") {
+      navigate("/DiseaesPred");
     }
   };
 
   return (
-    <div className="chatbot">
+    <div className="chatbot-container">
       <ThemeProvider theme={theme}>
         <ChatBot
           steps={steps}
           handleEnd={handleEnd}
-          headerTitle="Chatbot"
-          speechSynthesis={{ enable: true, lang: 'en' }}
-          botAvatar={"https://e7.pngegg.com/pngimages/811/700/png-clipart-chatbot-internet-bot-business-natural-language-processing-facebook-messenger-business-people-logo-thumbnail.png"}
-          avatarStyle={{ borderRadius: "100%" }}
           floating={true}
-          floatingIcon={
-            <img
-              src={"https://e7.pngegg.com/pngimages/811/700/png-clipart-chatbot-internet-bot-business-natural-language-processing-facebook-messenger-business-people-logo-thumbnail.png"}
-              style={{ width: "70%" }}
-              alt="chatBot icon"
-            />
-          }
-          floatingStyle={{
-            backgroundColor: "#ffffff",
-            width: "60px",
-            boxShadow: "2px 2px 20px -8px #111",
-          }}
+          headerTitle="Medi-bot"
+          placeholder="Type a message..."
+          width="400px"
+          height="500px"
         />
       </ThemeProvider>
     </div>

@@ -1,11 +1,11 @@
 import React,{useState} from "react";
 import './static/main.css';
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import kidney from './static/kidney.jpg';
 import '../../../styles/w3.css';
 
 export default function KidneyDiseaseForm(props) {
-	const history = useHistory();
+	const navigate = useNavigate();
     const [bp,setBp] = useState(0);
     const [sg,setSg] = useState(0);
     const [al,setAl] = useState(0);
@@ -46,7 +46,7 @@ export default function KidneyDiseaseForm(props) {
 		};
 		fetch('https://medi-care-backend.herokuapp.com/map-report/',requestOptions)
 			.then((response) => response.json())
-			.then((data) => history.push('/report/'+'kidney',{state:data}));
+			.then((data) => navigate('/report/kidney', { state: data }));
 	};
     return (
         <div className="contact1">

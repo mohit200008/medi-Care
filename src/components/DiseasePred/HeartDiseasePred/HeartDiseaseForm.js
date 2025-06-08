@@ -1,12 +1,12 @@
 import React,{useState} from "react";
 import './static/main.css';
 import './static/HeartDiseaseForm.css';
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import heart from './static/heart.jpg';
 import '../../../styles/w3.css';
 
 export default function HeartDiseaseForm(props) {
-	const history = useHistory();
+	const navigate = useNavigate();
     const [cp,setCp] = useState(0);
     const [trestbps,setTrestbps] = useState(0);
     const [chol,setChol] = useState(0);
@@ -47,7 +47,7 @@ export default function HeartDiseaseForm(props) {
 		};
 		fetch('https://medi-care-backend.herokuapp.com/map-report/',requestOptions)
 			.then((response) => response.json())
-			.then((data) => history.push('/report/'+'heart',{state:data}));
+			.then((data) => navigate('/report/heart', { state: data }));
 	};
     return (
     <div className="contact1">

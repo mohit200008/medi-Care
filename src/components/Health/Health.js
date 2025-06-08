@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "../../styles/Health.css";
-import TextField from "@material-ui/core/TextField";
-import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-import { Button } from "@material-ui/core";
+import { TextField, Button, ThemeProvider, createTheme } from "@mui/material";
 import "../../styles/Button_Animation.css"
 import fitness from '../../assets/images/fitness.jpg'
 
@@ -13,7 +11,7 @@ function Health() {
   const [age, setAge] = useState(0);
   const [page1, setPage1] = useState(true);
 
-  const theme = createMuiTheme({
+  const theme = createTheme({
     palette: {
       primary: {
         main: "#32A899",
@@ -85,7 +83,7 @@ function Health() {
               <div className="bmi__formContainer">
                 <div className="BmiSmall">Find out your</div>
                 <div className="BmiLarge">Body Mass Index</div>
-                <div className="BmiContent">Your BMI is a measurement that is a ratio of your weight and height. It’s a good way to gauge whether your weight is in healthy proportion to your height. In fact, knowing your BMI can help you – and your GP – determine any health risks you may face if it’s outside of the healthy range.</div>
+                <div className="BmiContent">Your BMI is a measurement that is a ratio of your weight and height. It's a good way to gauge whether your weight is in healthy proportion to your height. In fact, knowing your BMI can help you – and your GP – determine any health risks you may face if it's outside of the healthy range.</div>
                 <form className="bmi__form">
                   <TextField
                     label="Height (cm)"
