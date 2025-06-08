@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "homepage": ".",
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "@elastic/elasticsearch": "^9.0.1",
     "@emotion/react": "^11.11.3",
