@@ -2,6 +2,7 @@
   "name": "medi-care",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@elastic/elasticsearch": "^9.0.1",
     "@emotion/react": "^11.11.3",
