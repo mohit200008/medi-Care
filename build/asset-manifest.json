@@ -1,13 +1,10 @@
 {
   "files": {
-    "main.css": "./static/css/main.93fb0c01.css",
-    "main.js": "./static/js/main.45192811.js",
+    "main.css": "./static/css/main.eeb7b239.css",
+    "main.js": "./static/js/main.4c1a0c62.js",
     "static/media/HeartNew.jpg": "./static/media/HeartNew.f693eb2d94723d1ae8d1.jpg",
     "static/media/diabetesNew.jpg": "./static/media/diabetesNew.1a02c3d8c9fec7f996c5.jpg",
-    "static/media/slider4.png": "./static/media/slider4.c1c35971ec253334b62f.png",
-    "static/media/slider5.png": "./static/media/slider5.64fec44faa8b54f81e9a.png",
     "static/media/slider1.png": "./static/media/slider1.94b974719baba9c4dd6c.png",
-    "static/media/slider6.png": "./static/media/slider6.8e656df25a17e506002c.png",
     "static/media/slider2.png": "./static/media/slider2.0798abbbd2d7210a96f4.png",
     "static/media/kidney.jpg": "./static/media/kidney.cad28a4dd9ed58e14066.jpg",
     "static/media/slider3.png": "./static/media/slider3.3b2e4847bff1132da2ab.png",
@@ -18,11 +15,11 @@
     "static/media/doctor2.jpg": "./static/media/doctor2.ebfb9d3b1611b1fed414.jpg",
     "static/media/lady doctor3.jpg": "./static/media/lady doctor3.f9bebe61275a665b4766.jpg",
     "index.html": "./index.html",
-    "main.93fb0c01.css.map": "./static/css/main.93fb0c01.css.map",
-    "main.45192811.js.map": "./static/js/main.45192811.js.map"
+    "main.eeb7b239.css.map": "./static/css/main.eeb7b239.css.map",
+    "main.4c1a0c62.js.map": "./static/js/main.4c1a0c62.js.map"
   },
   "entrypoints": [
-    "static/css/main.93fb0c01.css",
-    "static/js/main.45192811.js"
+    "static/css/main.eeb7b239.css",
+    "static/js/main.4c1a0c62.js"
   ]
 }
