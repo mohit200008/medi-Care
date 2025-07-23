@@ -17,7 +17,7 @@ const News = () => {
 
     useEffect(() => {
         handleRequest(currentTag);
-    },[])
+    },[currentTag])
 
     const PageNumbers = [];
     const int = Math.ceil(total / 4);

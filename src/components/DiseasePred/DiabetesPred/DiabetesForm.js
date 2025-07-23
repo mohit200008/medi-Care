@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TextField, Button, ThemeProvider, createTheme, CircularProgress, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
+import { TextField, Button, ThemeProvider, createTheme, CircularProgress } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
 const DiabetesForm = () => {

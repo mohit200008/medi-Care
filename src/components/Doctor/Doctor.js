@@ -33,7 +33,7 @@ const Doctor = () => {
         center: [77.2100, 28.5672],
         zoom: 11
       });
-      response.data.response.groups[0].items.map(myVenue => {
+      response.data.response.groups[0].items.forEach(myVenue => {
         const el = document.createElement('div');
         el.className = 'w-4 h-4 bg-red-500 rounded-full border-2 border-white';
         const popup = new mapboxgl.Popup({ offset: 25 })

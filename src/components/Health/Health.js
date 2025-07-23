@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { TextField, Button, ThemeProvider, createTheme, Alert, CircularProgress, Select, MenuItem, FormControl, InputLabel } from "@mui/material";
+import { TextField, Button, ThemeProvider, createTheme, CircularProgress, Select, MenuItem, FormControl, InputLabel } from "@mui/material";
 import fitness from '../../assets/images/fitness.jpg'
 
 const Health = () => {

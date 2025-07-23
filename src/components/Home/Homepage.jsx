@@ -1,12 +1,8 @@
 import React from "react";
-import styled from "styled-components";
-import News from "./News/News";
-import BodyCard from './BodyCard';
-
-// components
-import HomePageBody from "./HomePageBody";
-// import HomePageHeader from "./HomePageHeader";
+import HomePageHeader from "./HomePageHeader";
 import HomePageSlider from "./HomePageSlider";
+import HomePageBody from "./HomePageBody";
+import News from "./News/News";
 
 function HomePage() {
   return (

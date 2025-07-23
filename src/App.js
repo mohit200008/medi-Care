@@ -15,7 +15,6 @@ import KidneyDiseaseForm from "./components/DiseasePred/KidneyDiseasePred/Kidney
 import BreastCancerForm from "./components/DiseasePred/BreastCancerPred/BreastCancerForm";
 import DiabetesForm from "./components/DiseasePred/DiabetesPred/DiabetesForm";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { CSSTransition } from 'react-transition-group';
 import DiseaseReport from './components/DiseasePred/DiseaseReport';
 import Footer from './components/Footer/Footer.jsx';
 
@@ -23,17 +22,15 @@ function App() {
 
   const [mode, setMode] = useState('light');
 
-  const [alert, setalert] = useState(null);
-
   const showalert = (message, type) => {
 
-    setalert({
+    const alert = {
       msg: message,
       type: type
-    });
+    };
 
     setTimeout(() => {
-      setalert(null);
+      // Alert will be cleared automatically
     }, 1800);
 
   }
