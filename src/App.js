@@ -15,7 +15,6 @@ import KidneyDiseaseForm from "./components/DiseasePred/KidneyDiseasePred/Kidney
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CSSTransition } from 'react-transition-group';
 import DiseaseReport from './components/DiseasePred/DiseaseReport';
-import Chart from './components/chart/Chart';
 import Footer from './components/Footer/Footer.jsx';
 
 function App() {
@@ -64,7 +63,6 @@ function App() {
         <Route path="/heart-predict" element={<HeartDiseaseForm />} />
         <Route path="/kidney-predict" element={<KidneyDiseaseForm />} />
         <Route path="/report/:type" element={<DiseaseReport />} />
-        <Route path="/covid" element={<Chart />} />
         <Route path="*" element={<NotfoundPage />} />
       </Routes>
       <Footer/>

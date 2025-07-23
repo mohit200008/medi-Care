@@ -1,13 +1,8 @@
 import { Button, InputLabel, MenuItem, Select, TextField } from '@mui/material';
 import React, { useState } from 'react';
-import '../../styles/Button_Animation.css';
-import '../../styles/DoctorForm.css';
 
-export default function DoctorForm() {
-	const [formCheck, setformCheck] = useState(false);
-	const docBtnClick = () => {
-		setformCheck(!formCheck);
-	};
+export default function DoctorForm({ onClose }) {
+	const [formCheck, setformCheck] = useState(true);
 	const [specilization, setSpecilization] = React.useState('');
 	const [file, setFile] = useState([]);
 	const [name, setName] = React.useState('');
@@ -20,6 +15,15 @@ export default function DoctorForm() {
 	const handelSpecilization = (event) => {
 		setSpecilization(event.target.value);
 	};
+
+	const handleClose = () => {
+		if (onClose) {
+			onClose();
+		} else {
+			setformCheck(false);
+		}
+	};
+
 	const data = {
 		name: name,
 		age: age,
@@ -30,153 +34,241 @@ export default function DoctorForm() {
 		specilization: specilization,
 		file: file,
 	};
+
 	const handleSubmit = () => {
 		console.log(data);
 		alert('Form submitted successfully');
+		handleClose();
 	};
+
 	return (
-		<div className={`${formCheck ? '' : 'blur'}`}>
-			{formCheck ? (
-				<button
-					onClick={docBtnClick}
-					className='addDocBtn'
-					onMouseDown={(e) =>
-						e.currentTarget.classList.add('btn-animation')
-					}
-					onMouseUp={(e) =>
-						e.currentTarget.classList.remove('btn-animation')
-					}
+		<div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+			<div className="bg-white rounded-2xl p-8 max-w-2xl w-full mx-4 relative max-h-[90vh] overflow-y-auto">
+				<button 
+					onClick={handleClose} 
+					className="absolute top-6 right-6 text-gray-500 hover:text-gray-700 text-2xl font-bold w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors duration-300"
+					aria-label="Close form"
 				>
-					ADD DOCTOR
+					×
 				</button>
-			) : (
-				<div className='doctorFormContainer'>
-					<button onClick={docBtnClick} className='closeBtn'>
-						X
-					</button>
-					<div className='doctorForm'>
-						<h1>Add Docter</h1>
-						<form
-							action=''
-							className='fromElement'
-							onSubmit={handleSubmit}
+				<h1 className="text-3xl font-bold text-gray-800 mb-8 text-center">Add Doctor</h1>
+				<form onSubmit={handleSubmit} className="space-y-6">
+					<TextField
+						label="Doctor's Name"
+						type="text"
+						variant="outlined"
+						name="name"
+						required
+						fullWidth
+						size="large"
+						onChange={(e) => setName(e.target.value)}
+						sx={{
+							'& .MuiOutlinedInput-root': {
+								fontSize: '1rem',
+								padding: '12px 16px',
+								minHeight: '56px'
+							},
+							'& .MuiInputLabel-root': {
+								fontSize: '1rem'
+							}
+						}}
+					/>
+					<TextField
+						label="Doctor's Age"
+						type="number"
+						variant="outlined"
+						name="age"
+						required
+						fullWidth
+						size="large"
+						InputProps={{
+							inputProps: { 
+								min: 25,
+								max: 80
+							},
+						}}
+						onChange={(e) => setAge(e.target.value)}
+						sx={{
+							'& .MuiOutlinedInput-root': {
+								fontSize: '1rem',
+								padding: '12px 16px',
+								minHeight: '56px'
+							},
+							'& .MuiInputLabel-root': {
+								fontSize: '1rem'
+							}
+						}}
+					/>
+					<div className="w-full">
+						<InputLabel id="specialization" className="mb-3 text-lg font-semibold">
+							Area of Specialization *
+						</InputLabel>
+						<Select
+							labelId="specialization"
+							id="specilization"
+							value={specilization}
+							label="Specialization"
+							onChange={handelSpecilization}
+							name="specialization"
+							fullWidth
+							size="large"
+							sx={{
+								fontSize: '1rem',
+								padding: '12px 16px',
+								minHeight: '56px',
+								'& .MuiSelect-select': {
+									fontSize: '1rem'
+								}
+							}}
 						>
-							<TextField
-								label="Doctor's Name"
-								type='text'
-								variant='outlined'
-								name='name'
-								required
-								onChange={(e) => setName(e.target.value)}
-							/>
-							<TextField
-								label="Doctor's Age"
-								type='number'
-								variant='outlined'
-								name='age'
-								required
-								InputProps={{
-									inputProps: { min: 25 },
-								}}
-								onChange={(e) => setAge(e.target.value)}
-							/>
-							<InputLabel id='specialization'>
-								Area of specialization
-							</InputLabel>
-							<Select
-								labelId='specialization'
-								id='specilization'
-								value={specilization}
-								label='Specilization'
-								onChange={handelSpecilization}
-								name='specialization'
-							>
-								<MenuItem value={'dermatologist'}>
-									Dermatologist
-								</MenuItem>
-								<MenuItem value={'psychiatrist'}>
-									Psychiatrist
-								</MenuItem>
-								<MenuItem value={'neurologist'}>
-									Neurologist
-								</MenuItem>
-								<MenuItem value={'physician'}>
-									Physician
-								</MenuItem>
-							</Select>
-							<TextField
-								label='Year OF Experience'
-								type='number'
-								variant='outlined'
-								name='experience'
-								required
-								InputProps={{
-									inputProps: { min: 0 },
-								}}
-								onChange={(e) => setExperience(e.target.value)}
-							/>
-							<TextField
-								label="Doctors's Review"
-								type='text'
-								variant='outlined'
-								multiline
-								required
-								name='review'
-								onChange={(e) => setReview(e.target.value)}
-							/>
-							<TextField
-								label='Phone number'
-								type='number'
-								variant='outlined'
-								required
-								name='phone'
-								onChange={(e) => setphonenumber(e.target.value)}
-							/>
-							<TextField
-								label=' Address of the doctor'
-								type='text'
-								variant='outlined'
-								multiline
-								name='address'
-								required
-								onChange={(e) => setaddress(e.target.value)}
-							/>
-							<label
-								for='myfile'
-								className='verification'
-								required
-							>
-								Verification proof of your degree :
-							</label>
-							<input
-								type='file'
-								id='myfile'
-								name='myfile'
-								onChange={(e) => setFile(e.target.files[0])}
-								required
-							></input>
-							<Button
-								onMouseDown={(e) =>
-									e.currentTarget.classList.add(
-										'btn-animation',
-									)
-								}
-								onMouseUp={(e) =>
-									e.currentTarget.classList.remove(
-										'btn-animation',
-									)
-								}
-								type='submit'
-								variant='contained'
-								className='submitBtn'
-								onSubmit={handleSubmit}
-							>
-								Submit
-							</Button>
-						</form>
+							<MenuItem value="dermatologist" sx={{ fontSize: '1rem', padding: '12px 16px' }}>Dermatologist</MenuItem>
+							<MenuItem value="psychiatrist" sx={{ fontSize: '1rem', padding: '12px 16px' }}>Psychiatrist</MenuItem>
+							<MenuItem value="neurologist" sx={{ fontSize: '1rem', padding: '12px 16px' }}>Neurologist</MenuItem>
+							<MenuItem value="physician" sx={{ fontSize: '1rem', padding: '12px 16px' }}>Physician</MenuItem>
+							<MenuItem value="cardiologist" sx={{ fontSize: '1rem', padding: '12px 16px' }}>Cardiologist</MenuItem>
+							<MenuItem value="orthopedist" sx={{ fontSize: '1rem', padding: '12px 16px' }}>Orthopedist</MenuItem>
+						</Select>
 					</div>
-				</div>
-			)}
+					<TextField
+						label="Years of Experience"
+						type="number"
+						variant="outlined"
+						name="experience"
+						required
+						fullWidth
+						size="large"
+						InputProps={{
+							inputProps: { 
+								min: 0,
+								max: 50
+							},
+						}}
+						onChange={(e) => setExperience(e.target.value)}
+						sx={{
+							'& .MuiOutlinedInput-root': {
+								fontSize: '1rem',
+								padding: '12px 16px',
+								minHeight: '56px'
+							},
+							'& .MuiInputLabel-root': {
+								fontSize: '1rem'
+							}
+						}}
+					/>
+					<TextField
+						label="Rating (1-5)"
+						type="number"
+						variant="outlined"
+						name="review"
+						required
+						fullWidth
+						size="large"
+						InputProps={{
+							inputProps: { 
+								min: 1,
+								max: 5,
+								step: 0.1
+							},
+						}}
+						onChange={(e) => setReview(e.target.value)}
+						sx={{
+							'& .MuiOutlinedInput-root': {
+								fontSize: '1rem',
+								padding: '12px 16px',
+								minHeight: '56px'
+							},
+							'& .MuiInputLabel-root': {
+								fontSize: '1rem'
+							}
+						}}
+					/>
+					<TextField
+						label="Phone Number"
+						type="tel"
+						variant="outlined"
+						name="phonenumber"
+						required
+						fullWidth
+						size="large"
+						onChange={(e) => setphonenumber(e.target.value)}
+						sx={{
+							'& .MuiOutlinedInput-root': {
+								fontSize: '1rem',
+								padding: '12px 16px',
+								minHeight: '56px'
+							},
+							'& .MuiInputLabel-root': {
+								fontSize: '1rem'
+							}
+						}}
+					/>
+					<TextField
+						label="Address"
+						type="text"
+						variant="outlined"
+						name="address"
+						required
+						fullWidth
+						size="large"
+						multiline
+						rows={3}
+						onChange={(e) => setaddress(e.target.value)}
+						sx={{
+							'& .MuiOutlinedInput-root': {
+								fontSize: '1rem',
+								padding: '12px 16px',
+								minHeight: '80px'
+							},
+							'& .MuiInputLabel-root': {
+								fontSize: '1rem'
+							}
+						}}
+					/>
+					<div className="flex flex-col sm:flex-row gap-4 pt-6">
+						<Button
+							type="submit"
+							variant="contained"
+							fullWidth
+							size="large"
+							sx={{
+								backgroundColor: '#3b82f6',
+								fontSize: '1rem',
+								padding: '12px 24px',
+								minHeight: '56px',
+								fontWeight: 600,
+								'&:hover': {
+									backgroundColor: '#2563eb',
+									transform: 'translateY(-1px)',
+									boxShadow: '0 4px 12px rgba(59, 130, 246, 0.3)'
+								}
+							}}
+						>
+							Submit Doctor Information
+						</Button>
+						<Button
+							variant="outlined"
+							onClick={handleClose}
+							fullWidth
+							size="large"
+							sx={{
+								borderColor: '#6b7280',
+								color: '#6b7280',
+								fontSize: '1rem',
+								padding: '12px 24px',
+								minHeight: '56px',
+								fontWeight: 600,
+								'&:hover': {
+									borderColor: '#4b5563',
+									backgroundColor: '#f9fafb',
+									transform: 'translateY(-1px)'
+								}
+							}}
+						>
+							Cancel
+						</Button>
+					</div>
+				</form>
+			</div>
 		</div>
 	);
 }
