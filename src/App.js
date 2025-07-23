@@ -12,6 +12,8 @@ import Details from './components/Doctor/Details';
 import NotfoundPage from "./components/NotfoundPage";
 import HeartDiseaseForm from "./components/DiseasePred/HeartDiseasePred/HeartDiseaseForm";
 import KidneyDiseaseForm from "./components/DiseasePred/KidneyDiseasePred/KidneyDiseaseForm";
+import BreastCancerForm from "./components/DiseasePred/BreastCancerPred/BreastCancerForm";
+import DiabetesForm from "./components/DiseasePred/DiabetesPred/DiabetesForm";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CSSTransition } from 'react-transition-group';
 import DiseaseReport from './components/DiseasePred/DiseaseReport';
@@ -62,6 +64,8 @@ function App() {
         <Route path="/health" element={<ContactUs />} />
         <Route path="/heart-predict" element={<HeartDiseaseForm />} />
         <Route path="/kidney-predict" element={<KidneyDiseaseForm />} />
+        <Route path="/breast-cancer-predict" element={<BreastCancerForm />} />
+        <Route path="/diabetes-predict" element={<DiabetesForm />} />
         <Route path="/report/:type" element={<DiseaseReport />} />
         <Route path="*" element={<NotfoundPage />} />
       </Routes>
