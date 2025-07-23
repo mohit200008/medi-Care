@@ -3,8 +3,8 @@ import { TextField, Button, ThemeProvider, createTheme, CircularProgress } from 
 import { useNavigate } from 'react-router-dom';
 
 const KidneyDiseaseForm = () => {
-  const [formData, setFormData] = useState({
-    age: '',
+	const [formData, setFormData] = useState({
+		age: '',
     bloodPressure: '',
     specificGravity: '',
     albumin: '',
@@ -125,7 +125,7 @@ const KidneyDiseaseForm = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+		e.preventDefault();
     if (validateForm()) {
       setLoading(true);
       // Simulate API call
@@ -154,9 +154,9 @@ const KidneyDiseaseForm = () => {
         [field]: ''
       });
     }
-  };
+	};
 
-  return (
+	return (
     <ThemeProvider theme={theme}>
       <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-cyan-50 py-12 px-4">
         <div className="max-w-4xl mx-auto">
@@ -178,9 +178,9 @@ const KidneyDiseaseForm = () => {
                 <TextField
                   fullWidth
                   label="Age (years)"
-                  type="number"
+						type="number"
                   variant="outlined"
-                  value={formData.age}
+						value={formData.age}
                   onChange={handleChange('age')}
                   error={!!errors.age}
                   helperText={errors.age || "Age in years"}
@@ -198,7 +198,7 @@ const KidneyDiseaseForm = () => {
                 <TextField
                   fullWidth
                   label="Blood Pressure (mmHg)"
-                  type="number"
+						type="number"
                   variant="outlined"
                   value={formData.bloodPressure}
                   onChange={handleChange('bloodPressure')}
@@ -218,7 +218,7 @@ const KidneyDiseaseForm = () => {
                 <TextField
                   fullWidth
                   label="Specific Gravity"
-                  type="number"
+						type="number"
                   variant="outlined"
                   value={formData.specificGravity}
                   onChange={handleChange('specificGravity')}
@@ -238,7 +238,7 @@ const KidneyDiseaseForm = () => {
                 <TextField
                   fullWidth
                   label="Albumin (g/dL)"
-                  type="number"
+						type="number"
                   variant="outlined"
                   value={formData.albumin}
                   onChange={handleChange('albumin')}
@@ -258,7 +258,7 @@ const KidneyDiseaseForm = () => {
                 <TextField
                   fullWidth
                   label="Sugar"
-                  type="number"
+						type="number"
                   variant="outlined"
                   value={formData.sugar}
                   onChange={handleChange('sugar')}
@@ -358,7 +358,7 @@ const KidneyDiseaseForm = () => {
                 <TextField
                   fullWidth
                   label="Blood Glucose Random (mg/dL)"
-                  type="number"
+						type="number"
                   variant="outlined"
                   value={formData.bloodGlucoseRandom}
                   onChange={handleChange('bloodGlucoseRandom')}
@@ -378,7 +378,7 @@ const KidneyDiseaseForm = () => {
                 <TextField
                   fullWidth
                   label="Blood Urea (mg/dL)"
-                  type="number"
+						type="number"
                   variant="outlined"
                   value={formData.bloodUrea}
                   onChange={handleChange('bloodUrea')}
@@ -398,7 +398,7 @@ const KidneyDiseaseForm = () => {
                 <TextField
                   fullWidth
                   label="Serum Creatinine (mg/dL)"
-                  type="number"
+						type="number"
                   variant="outlined"
                   value={formData.serumCreatinine}
                   onChange={handleChange('serumCreatinine')}
@@ -418,7 +418,7 @@ const KidneyDiseaseForm = () => {
                 <TextField
                   fullWidth
                   label="Sodium (mEq/L)"
-                  type="number"
+						type="number"
                   variant="outlined"
                   value={formData.sodium}
                   onChange={handleChange('sodium')}
@@ -438,7 +438,7 @@ const KidneyDiseaseForm = () => {
                 <TextField
                   fullWidth
                   label="Potassium (mEq/L)"
-                  type="number"
+						type="number"
                   variant="outlined"
                   value={formData.potassium}
                   onChange={handleChange('potassium')}
@@ -458,7 +458,7 @@ const KidneyDiseaseForm = () => {
                 <TextField
                   fullWidth
                   label="Hemoglobin (g/dL)"
-                  type="number"
+						type="number"
                   variant="outlined"
                   value={formData.hemoglobin}
                   onChange={handleChange('hemoglobin')}
@@ -478,7 +478,7 @@ const KidneyDiseaseForm = () => {
                 <TextField
                   fullWidth
                   label="Packed Cell Volume (%)"
-                  type="number"
+						type="number"
                   variant="outlined"
                   value={formData.packedCellVolume}
                   onChange={handleChange('packedCellVolume')}
@@ -498,7 +498,7 @@ const KidneyDiseaseForm = () => {
                 <TextField
                   fullWidth
                   label="White Blood Cell Count (cells/cumm)"
-                  type="number"
+						type="number"
                   variant="outlined"
                   value={formData.whiteBloodCellCount}
                   onChange={handleChange('whiteBloodCellCount')}
@@ -518,7 +518,7 @@ const KidneyDiseaseForm = () => {
                 <TextField
                   fullWidth
                   label="Red Blood Cell Count (millions/cmm)"
-                  type="number"
+						type="number"
                   variant="outlined"
                   value={formData.redBloodCellCount}
                   onChange={handleChange('redBloodCellCount')}
@@ -655,11 +655,11 @@ const KidneyDiseaseForm = () => {
                   <option value="yes">Yes</option>
                   <option value="no">No</option>
                 </TextField>
-              </div>
+				</div>
 
               <div className="flex justify-center pt-6">
                 <Button
-                  type="submit"
+						type="submit"
                   variant="contained"
                   color="primary"
                   disabled={loading}
@@ -680,9 +680,9 @@ const KidneyDiseaseForm = () => {
                     'Analyze Risk'
                   )}
                 </Button>
-              </div>
-            </form>
-          </div>
+				</div>
+			</form>
+		</div>
 
           {/* Information Section */}
           <div className="mt-8 bg-white rounded-2xl shadow-lg p-8">
@@ -722,7 +722,7 @@ const KidneyDiseaseForm = () => {
         </div>
       </div>
     </ThemeProvider>
-  );
+	);
 };
 
 export default KidneyDiseaseForm;

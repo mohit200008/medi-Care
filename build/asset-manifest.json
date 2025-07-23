@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.22c3cc42.css",
-    "main.js": "./static/js/main.e032462b.js",
+    "main.js": "./static/js/main.9b3292a8.js",
     "static/media/HeartNew.jpg": "./static/media/HeartNew.f693eb2d94723d1ae8d1.jpg",
     "static/media/diabetesNew.jpg": "./static/media/diabetesNew.1a02c3d8c9fec7f996c5.jpg",
     "static/media/slider1.png": "./static/media/slider1.94b974719baba9c4dd6c.png",
@@ -14,10 +14,10 @@
     "static/media/lady doctor3.jpg": "./static/media/lady doctor3.f9bebe61275a665b4766.jpg",
     "index.html": "./index.html",
     "main.22c3cc42.css.map": "./static/css/main.22c3cc42.css.map",
-    "main.e032462b.js.map": "./static/js/main.e032462b.js.map"
+    "main.9b3292a8.js.map": "./static/js/main.9b3292a8.js.map"
   },
   "entrypoints": [
     "static/css/main.22c3cc42.css",
-    "static/js/main.e032462b.js"
+    "static/js/main.9b3292a8.js"
   ]
 }

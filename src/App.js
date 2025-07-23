@@ -23,16 +23,9 @@ function App() {
   const [mode, setMode] = useState('light');
 
   const showalert = (message, type) => {
-
-    const alert = {
-      msg: message,
-      type: type
-    };
-
     setTimeout(() => {
       // Alert will be cleared automatically
     }, 1800);
-
   }
 
   const toggleMode = () => {

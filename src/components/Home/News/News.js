@@ -264,7 +264,7 @@ const News = () => {
                             <p className="text-gray-600">
                                 No articles found for "{currentTag}". Try a different search term or category.
                             </p>
-                        </div>
+        </div>
                     )}
                 </div>
 
@@ -292,8 +292,8 @@ const News = () => {
                         </div>
                     </div>
                 )}
-            </div>
         </div>
+    </div>
     );
 }
 

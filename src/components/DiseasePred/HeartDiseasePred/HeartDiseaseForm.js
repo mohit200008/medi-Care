@@ -3,19 +3,19 @@ import { TextField, Button, ThemeProvider, createTheme, CircularProgress } from 
 import { useNavigate } from 'react-router-dom';
 
 const HeartDiseaseForm = () => {
-  const [formData, setFormData] = useState({
-    age: '',
-    sex: '',
-    cp: '',
-    trestbps: '',
-    chol: '',
-    fbs: '',
-    restecg: '',
-    thalach: '',
-    exang: '',
-    oldpeak: '',
-    slope: '',
-    ca: '',
+	const [formData, setFormData] = useState({
+		age: '',
+		sex: '',
+		cp: '',
+		trestbps: '',
+		chol: '',
+		fbs: '',
+		restecg: '',
+		thalach: '',
+		exang: '',
+		oldpeak: '',
+		slope: '',
+		ca: '',
     thal: ''
   });
   const [loading, setLoading] = useState(false);
@@ -81,7 +81,7 @@ const HeartDiseaseForm = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+		e.preventDefault();
     if (validateForm()) {
       setLoading(true);
       // Simulate API call
@@ -110,9 +110,9 @@ const HeartDiseaseForm = () => {
         [field]: ''
       });
     }
-  };
+	};
 
-  return (
+	return (
     <ThemeProvider theme={theme}>
       <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-pink-50 py-12 px-4">
         <div className="max-w-4xl mx-auto">
@@ -134,9 +134,9 @@ const HeartDiseaseForm = () => {
                 <TextField
                   fullWidth
                   label="Age (years)"
-                  type="number"
+						type="number"
                   variant="outlined"
-                  value={formData.age}
+						value={formData.age}
                   onChange={handleChange('age')}
                   error={!!errors.age}
                   helperText={errors.age || "Age in years"}
@@ -156,7 +156,7 @@ const HeartDiseaseForm = () => {
                   select
                   label="Sex"
                   variant="outlined"
-                  value={formData.sex}
+						value={formData.sex}
                   onChange={handleChange('sex')}
                   error={!!errors.sex}
                   helperText={errors.sex || "Gender (0 = Female, 1 = Male)"}
@@ -176,7 +176,7 @@ const HeartDiseaseForm = () => {
                   label="Chest Pain Type"
                   type="number"
                   variant="outlined"
-                  value={formData.cp}
+						value={formData.cp}
                   onChange={handleChange('cp')}
                   error={!!errors.cp}
                   helperText={errors.cp || "Chest pain type (0-3)"}
@@ -194,9 +194,9 @@ const HeartDiseaseForm = () => {
                 <TextField
                   fullWidth
                   label="Resting Blood Pressure (mmHg)"
-                  type="number"
+						type="number"
                   variant="outlined"
-                  value={formData.trestbps}
+						value={formData.trestbps}
                   onChange={handleChange('trestbps')}
                   error={!!errors.trestbps}
                   helperText={errors.trestbps || "Resting blood pressure"}
@@ -214,9 +214,9 @@ const HeartDiseaseForm = () => {
                 <TextField
                   fullWidth
                   label="Cholesterol (mg/dL)"
-                  type="number"
+						type="number"
                   variant="outlined"
-                  value={formData.chol}
+						value={formData.chol}
                   onChange={handleChange('chol')}
                   error={!!errors.chol}
                   helperText={errors.chol || "Serum cholesterol level"}
@@ -254,9 +254,9 @@ const HeartDiseaseForm = () => {
                 <TextField
                   fullWidth
                   label="Resting ECG Results"
-                  type="number"
+						type="number"
                   variant="outlined"
-                  value={formData.restecg}
+						value={formData.restecg}
                   onChange={handleChange('restecg')}
                   error={!!errors.restecg}
                   helperText={errors.restecg || "Resting electrocardiographic results"}
@@ -274,9 +274,9 @@ const HeartDiseaseForm = () => {
                 <TextField
                   fullWidth
                   label="Maximum Heart Rate (bpm)"
-                  type="number"
+						type="number"
                   variant="outlined"
-                  value={formData.thalach}
+						value={formData.thalach}
                   onChange={handleChange('thalach')}
                   error={!!errors.thalach}
                   helperText={errors.thalach || "Maximum heart rate achieved"}
@@ -296,7 +296,7 @@ const HeartDiseaseForm = () => {
                   select
                   label="Exercise Induced Angina"
                   variant="outlined"
-                  value={formData.exang}
+						value={formData.exang}
                   onChange={handleChange('exang')}
                   error={!!errors.exang}
                   helperText={errors.exang || "Exercise induced angina"}
@@ -314,9 +314,9 @@ const HeartDiseaseForm = () => {
                 <TextField
                   fullWidth
                   label="ST Depression (mm)"
-                  type="number"
+						type="number"
                   variant="outlined"
-                  value={formData.oldpeak}
+						value={formData.oldpeak}
                   onChange={handleChange('oldpeak')}
                   error={!!errors.oldpeak}
                   helperText={errors.oldpeak || "ST depression induced by exercise"}
@@ -336,7 +336,7 @@ const HeartDiseaseForm = () => {
                   label="Slope of Peak Exercise ST"
                   type="number"
                   variant="outlined"
-                  value={formData.slope}
+						value={formData.slope}
                   onChange={handleChange('slope')}
                   error={!!errors.slope}
                   helperText={errors.slope || "Slope of peak exercise ST segment"}
@@ -354,9 +354,9 @@ const HeartDiseaseForm = () => {
                 <TextField
                   fullWidth
                   label="Number of Major Vessels"
-                  type="number"
+						type="number"
                   variant="outlined"
-                  value={formData.ca}
+						value={formData.ca}
                   onChange={handleChange('ca')}
                   error={!!errors.ca}
                   helperText={errors.ca || "Number of major vessels colored by fluoroscopy"}
@@ -376,7 +376,7 @@ const HeartDiseaseForm = () => {
                   label="Thalassemia Type"
                   type="number"
                   variant="outlined"
-                  value={formData.thal}
+						value={formData.thal}
                   onChange={handleChange('thal')}
                   error={!!errors.thal}
                   helperText={errors.thal || "Thalassemia type"}
@@ -390,12 +390,12 @@ const HeartDiseaseForm = () => {
                       minHeight: '56px'
                     }
                   }}
-                />
-              </div>
+					/>
+				</div>
 
               <div className="flex justify-center pt-6">
                 <Button
-                  type="submit"
+						type="submit"
                   variant="contained"
                   color="primary"
                   disabled={loading}
@@ -416,9 +416,9 @@ const HeartDiseaseForm = () => {
                     'Analyze Risk'
                   )}
                 </Button>
-              </div>
-            </form>
-          </div>
+				</div>
+			</form>
+		</div>
 
           {/* Information Section */}
           <div className="mt-8 bg-white rounded-2xl shadow-lg p-8">
@@ -458,7 +458,7 @@ const HeartDiseaseForm = () => {
         </div>
       </div>
     </ThemeProvider>
-  );
+	);
 };
 
 export default HeartDiseaseForm;
